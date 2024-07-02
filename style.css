@@ -818,6 +818,7 @@ a.g-button-pay {
     line-height: 16px;
     text-align: center;
     cursor: pointer;
+    color: #252525;
 }
 .g-name-block {
     display: flex;
