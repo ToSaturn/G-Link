@@ -780,6 +780,10 @@ p.g-name-tover {
     font-weight: 600;
     line-height: 26px;
     margin-bottom: 25px;
+    max-height: 54px;
+    min-height: 54px;
+    overflow: hidden;
+    display: block;
 }
 .g-price-tover {
     display: flex;
