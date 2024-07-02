@@ -431,33 +431,33 @@ p.g-main-text {
     display: flex;
     justify-content: space-between;
 }
-ul.g-menu-header {
+.g-menu-header {
     display: flex;
 }
-ul.g-menu-header li {
+.g-menu-header li {
     align-content: center;
     list-style: none;
 }
-ul.g-menu-header>li a, ul.g-menu-header li span a {
+.g-menu-header>li a, .g-menu-header li span a {
     color: white;
     font-size: 16px;
     font-weight: 500;
     line-height: 20.8px;
 }
-ul.g-menu-header:first-child li:first-child {
+.g-menu-header:first-child li:first-child {
     padding: 17px 0;
 }
 li.menu-item img {
     margin-right: 8px;
 }
-ul.g-menu-header:first-child li {
+.g-menu-header:first-child li {
     margin-right: 32px;
     align-content: center;
 }
-ul.g-menu-header:last-child li {
+.g-menu-header:last-child li {
     margin-left: 32px;
 }
-ul.g-menu-header:first-child li:first-child {
+.g-menu-header:first-child li:first-child {
     color: #FEAA00;
 }
 header {
@@ -541,19 +541,19 @@ p.g-whats img, p.g-teleg img {
     color: white;
     opacity: 50%;
 }
-ul.g-menu-header:first-child li:first-child a {
+.g-menu-header:first-child li:first-child a {
     color: #FEAA00;
 }
-ul.g-menu-header:first-child li:first-child {
+.g-menu-header:first-child li:first-child {
     margin-right: 36px;
     padding-right: 20px;
     padding-left: 20px;
     margin-left: -20px;
 }
-ul.g-menu-header:first-child li:first-child:hover {
+.g-menu-header:first-child li:first-child:hover {
     background: #FEAA00;
 }
-ul.g-menu-header:first-child li:first-child:hover a {
+.g-menu-header:first-child li:first-child:hover a {
     color: black;
     display: flex;
 }
