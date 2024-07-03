@@ -475,9 +475,20 @@ p.g-main-text {
     width: 56px;
     height: 48px;
     -ms-flex-line-pack: center;
-        align-content: center;
+    align-content: center;
     text-align: center;
     border: 1px solid #E8E8E8;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 7px 0px 20px;
+}
+p.price-cart a, p.price-cart a:active, p.price-cart a:hover {
+    color: #252525;
+}
+.g-block-basket>a {
+    padding-right: 13px;
 }
 .g-top-headre {
     display: -webkit-box;
