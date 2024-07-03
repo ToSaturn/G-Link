@@ -482,7 +482,10 @@ p.g-main-text {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 7px 0px 20px;
+    padding: 0 0px 0px 20px;
+}
+p.price-cart a {
+    padding-right: 7px;
 }
 p.price-cart a, p.price-cart a:active, p.price-cart a:hover {
     color: #252525;
