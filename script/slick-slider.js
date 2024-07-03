@@ -6,7 +6,17 @@ window.onload = function() {
     slidesToScroll: 1,
     arrows: true,
     prevArrow: $('.slick-prev'),
-    nextArrow: $('.slick-next')
+    nextArrow: $('.slick-next'),
+        responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false
+          }
+        }
+       ]
   });
 
 
@@ -18,7 +28,17 @@ window.onload = function() {
     prevArrow: $('.slick-prev-brand'),
     nextArrow: $('.slick-next-brand'),
 
-    centerPadding: '1s0px'
+    centerPadding: '10px',
+    responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false
+      }
+    }
+   ]
   });
 
 
@@ -29,7 +49,18 @@ window.onload = function() {
     slidesToScroll: 1,
     arrows: true,
     prevArrow: $('.slick-prev-tovar'),
-    nextArrow: $('.slick-next-tovar')
+    nextArrow: $('.slick-next-tovar'),
+    responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+      slidesToShow:1,
+      slidesToScroll: 1,
+      arrows: false,
+      centerMode:true
+      }
+    }
+   ]
 
   });
 
