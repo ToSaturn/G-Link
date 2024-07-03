@@ -1646,7 +1646,9 @@ font-weight: 700;
 .g-block-city {
     cursor: pointer;
 }
-
+img.burger {
+  display: none;
+}
 
 
 
@@ -2010,4 +2012,22 @@ p.g-search input[type="search"] {
     line-height: 15.6px;
     text-align: left;
 }
+footer {
+    padding-top: 24px;
+    background: #222222;
+}
+.g-top-headre>a>img {
+    height: 20px;
+    margin: 0 25px 0 13px;
+}
+.g-top-headre>a {
+    margin-right: 0;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+}
+img.burger {
+  display: block;
+}
+
 }
