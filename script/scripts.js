@@ -83,4 +83,32 @@ window.onload = function() {
   }
 
 
+
+
+// ------------------------города--------------------------
+
+function popUp(){
+
+    document.querySelector('.popup-city').style.display='block';
+    document.querySelector('.fon').style.display='block';
+
+    document.querySelector('body').style.overflow='hidden';
+}
+
+document.querySelector('.p-close').onсlick = function(){
+
+    document.querySelector('.popup-city').style.display='none';
+    document.querySelector('.fon').style.display='none';
+
+    document.querySelector('body').style.overflow='auto';
+}
+
+document.querySelector('.fon').onсlick = function(){
+
+    document.querySelector('.popup-city').style.display='none';
+    document.querySelector('.fon').style.display='none';
+
+    document.querySelector('body').style.overflow='auto';
+}
+
 }

@@ -37,9 +37,9 @@
           </form>
 
         <div class="g-map-cart">
-          <div class="g-block-city">
+          <div class="g-block-city" >
             <img src="img/Vector (1).svg" alt="">
-            <p>Выбрать город</p>
+            <p onclick="popUp();"><a>Выбрать город</a></p>
           </div>
           <div class="g-block-basket">
             <!-- <div class="g-basket-count"></div> -->
@@ -318,7 +318,30 @@
 
 
 
+<script>
+function popUp(){
 
+    document.querySelector('.popup-city').style.display='block';
+    document.querySelector('.fon').style.display='block';
+
+    document.querySelector('body').style.overflow='hidden';
+}
+function popUpCl(){
+
+    document.querySelector('.popup-city').style.display='none';
+    document.querySelector('.fon').style.display='none';
+
+    document.querySelector('body').style.overflow='auto';
+}
+
+function popUpFon(){
+
+    document.querySelector('.popup-city').style.display='none';
+    document.querySelector('.fon').style.display='none';
+
+    document.querySelector('body').style.overflow='auto';
+}
+</script>
 
 
 
@@ -362,6 +385,80 @@
       </div>
 
     </div>
+
+
+
+
+
+<div class="fon" onclick="popUpFon();">
+
+</div>
+
+
+<div class="popup-city">
+  <div class="p-title">
+    <p>Ваш город</p>
+    <img class="p-close" src="img/Vector (5).svg" onclick="popUpCl();">
+  </div>
+  <div class="p-search">
+    <form class="g-block-search">
+      <p class="g-search">
+        <img src="img/Icons (1).svg" class="but-search">
+        <input type="submit" value="🔍︎">
+        <input type="search" name="q" placeholder="Поиск товаров">
+      </p>
+    </form>
+  </div>
+  <div class="p-flex-city">
+    <a class="p-tag-city">Москва</a>
+    <a class="p-tag-city">Санкт-Петербург</a>
+    <a class="p-tag-city">Новосибирск</a>
+    <a class="p-tag-city">Казань</a>
+    <a class="p-tag-city">Краснодар</a>
+    <a class="p-tag-city">Екатеринбург</a>
+    <a class="p-tag-city">Уфа</a>
+    <a class="p-tag-city">Нижний Новгород</a>
+    <a class="p-tag-city">Челябинск</a>
+    <a class="p-tag-city">Самара</a>
+    <a class="p-tag-city">Ростов-на-Донусква</a>
+    <a class="p-tag-city">Омск</a>
+    <a class="p-tag-city">Красноярск</a>
+    <a class="p-tag-city">Воронеж </a>
+  </div>
+  <div class="p-city-main">
+    <ul class="nav-menu">Округ
+      <li><a>Дальневосточный</a></li>
+      <li><a>Приволжский</a></li>
+      <li><a>Северо-Западный</a></li>
+      <li><a>Северо-Кавказский</a></li>
+      <li><a>Сибирский</a></li>
+      <li><a>Уральский</a></li>
+      <li><a>Центральный</a>
+        <ul class="p-sub-menu">Регион
+          <li><a>Белгородская область</a></li>
+          <li><a>Брянская область</a></li>
+          <li><a>Владимирская область</a></li>
+          <li><a>Воронежская область</a></li>
+          <li><a>Город Москва</a>
+            <ul class="p-sub-sub-menu">Город
+              <li><a>Зеленоград</a></li>
+              <li><a>Москва</a></li>
+              <li><a>Московский</a></li>
+              <li><a>Московский</a></li>
+              <li><a>Троицк</a></li>
+              <li><a>Щербина</a></li>
+            </ul>
+          </li>
+          <li><a>Ивановская область</a></li>
+          <li><a>Калужская область</a></li>
+          <li><a>Костромская область</a></li>
+        </ul>
+      </li>
+      <li><a>Южный</a></li>
+    </ul>
+  </div>
+</div>
+
   </footer>
 
 
