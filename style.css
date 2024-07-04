@@ -61,6 +61,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 
 
 @font-face {
@@ -1841,12 +1848,26 @@ a.g-but-white.g-but, a.g-but-white.g-but:active, a.g-but-white.g-but:hover {
 p.info-name.mob-title-brand {
     display: none;
 }
-
+.g-left-menu a, .g-left-menu a:active, .g-left-menu a:hover {
+    color: #252525;
+}
 
 
 
 
 @media(max-width: 720px) {
+  .dostavka .g-right-info h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+}
+.g-right-info img {
+    margin: 24px 0;
+    width: 100%;
+}
+  .g-left-menu {
+    display: none;
+}
   .form {
     max-width: 548px;
     width: auto;
