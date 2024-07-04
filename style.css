@@ -26,6 +26,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 
 
 @font-face {
@@ -1750,6 +1757,8 @@ p.m-name-cat {
     padding: 5px 0;
 }
 .g-block-city-mob .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .g-block-city-mob img {
@@ -2146,8 +2155,12 @@ img.burger {
   display: block;
 }
 .p-flex-city {
-    flex-wrap: nowrap;
-    flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-left: -16px;
 }
 .p-search img.but-search {
