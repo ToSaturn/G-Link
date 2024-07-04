@@ -66,9 +66,29 @@
 
       <h1>Название категории</h1>
 
+      <div class="g-sort-filter">
+        <select name="select">
+          <option value="value1" selected>По популярности</option>
+          <option value="value2" >Новинки</option>
+          <option value="value1" >Сначала дорогие</option>
+          <option value="value2" >Сначала дешёвые</option>
+        </select>
+
+        <div class="filter-mob" onclick="filter()">
+          <img src="img/Icons (2).svg" alt="">
+          <p>3</p>
+        </div>
+      </div>
+
       <div class="g-main-catalog">
 
         <div class="g-filter">
+
+          <div class="p-title mob-filter">
+            <p>Фильтры</p>
+            <img class="p-close" src="img/Vector (5).svg" onclick="filterCl()">
+          </div>
+
           <div class="g-filter-category">
           <div class="box-more">
             <p><a>Коллиматорные прицелы</a></p>
@@ -370,7 +390,7 @@
       <p class="g-text-p">
           Начиная с 2008 года, интернет-магазин TopOptics.ru предлагает своим клиентам широкий ассортимент&nbsp;товаров для охоты, рыбалки и туризма.</p>
       <p class="g-text-p">
-          У нас представлено более 10000 наименований оптических приборов ведущих мировых и отечественных производителей, таких как:&nbsp;Carl Zeiss,&nbsp;Swarovski,&nbsp;Leica,&nbsp;Schmidt&amp;Bender,&nbsp;Leupold,&nbsp;Bushnell,&nbsp;Nikon,&nbsp;Steiner,&nbsp;Dedal,&nbsp;Yukon,&nbsp;Pulsar,&nbsp;Dipol,&nbsp;ВОМЗ,&nbsp;КОМЗ&nbsp;и многих других.
+        У нас представлено более 10000 наименований оптических приборов ведущих мировых и отечественных производителей, таких как: Carl Zeiss, Swarovski, Leica, Schmidt Bender, Leupold, Bushnell, Nikon, Steiner, Dedal, Yukon, Pulsar, Dipol, ВОМЗ, КОМЗ и многих других.
       </p><p class="g-text-p">
           Помимо&nbsp;оптических прицелов,&nbsp;коллиматорных прицелов,&nbsp;кронштейнов для оружия,&nbsp;биноклей,&nbsp;зрительных труб,&nbsp;приборов ночного видения,&nbsp;лазерных дальномеров&nbsp;и других оптических приборов, Вы сможете найти у нас широкий ассортимент&nbsp;снаряжения для охоты, рыбалки и туризма, от&nbsp;оружейной химии&nbsp;до&nbsp;одежды для охоты&nbsp;и рыбалки.
       </p>
@@ -381,6 +401,24 @@
     </main>
 
 
+<script type="text/javascript">
+function filter(){
+
+    document.querySelector('.g-filter').style.display='block';
+    document.querySelector('.fon').style.display='block';
+
+    document.querySelector('body').style.overflow='hidden';
+}
+
+function filterCl(){
+
+    document.querySelector('.g-filter').style.display='none';
+    document.querySelector('.fon').style.display='none';
+
+    document.querySelector('body').style.overflow='auto';
+}
+
+</script>
 
 
 
