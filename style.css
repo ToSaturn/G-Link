@@ -54,6 +54,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 
 
 @font-face {
@@ -1795,7 +1802,8 @@ p.m-name-cat {
 .g-block-flex.mobile {
     display: none;
 }
-main.about-us .g-block-div .g-block__item {
+main.about-us .g-block-div .g-block__item,
+main.opt .g-block-div .g-block__item {
     background: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1807,7 +1815,8 @@ main.about-us .g-block-div .g-block__item {
     -webkit-box-shadow: inset 0px -59px 46px #0000009c;
     box-shadow: none;
 }
-main.about-us .g-block-div .g-block__item img {
+main.about-us .g-block-div .g-block__item img,
+main.opt .g-block-div .g-block__item img {
     width: 100%;
     display: block;
     max-width: none;
@@ -1815,7 +1824,8 @@ main.about-us .g-block-div .g-block__item img {
     position: relative;
     z-index: -1;
 }
-main.about-us .g-block-info p.g-text-title {
+main.about-us .g-block-info p.g-text-title,
+main.opt .g-block-info p.g-text-title {
     font-size: 28px;
     font-weight: 700;
     line-height: 36.4px;
@@ -1837,6 +1847,24 @@ p.info-name.mob-title-brand {
 
 
 @media(max-width: 720px) {
+  .form {
+    max-width: 548px;
+    width: auto;
+    margin: auto;
+    border: 2px solid #EFEFEF;
+    border-radius: 16px;
+    padding: 20px;
+}
+.g-form {
+    padding: 24px 0 24px;
+}
+.g-form {
+    padding: 40px 0 24px;
+}
+  main.opt .g-block-info {
+    padding-top: 0;
+    margin-top: 24px;
+}
 .about-us p.g-title {
     font-size: 32px;
     font-weight: 700;
@@ -1850,7 +1878,8 @@ p.info-name.mob-title-brand {
     line-height: 26px;
     text-align: left;
 }
-main.about-us .g-block-info p.g-text-title {
+main.about-us .g-block-info p.g-text-title,
+main.opt .g-block-info p.g-text-title {
     margin-bottom: 12px;
     margin-top: 24px;
     font-size: 28px;
@@ -1858,7 +1887,22 @@ main.about-us .g-block-info p.g-text-title {
     line-height: 36.4px;
     text-align: left;
 }
-main.about-us p.g-block__text {
+main.about-us p.g-block__text,
+main.opt p.g-block__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.8px;
+    text-align: left;
+}
+main.opt .g-block-info p.g-text-title {
+    margin-bottom: 12px;
+    margin-top: 24px;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 36.4px;
+    text-align: left;
+}
+main.opt p.g-block__text {
     font-size: 16px;
     font-weight: 400;
     line-height: 20.8px;
@@ -1881,7 +1925,8 @@ p.info-name.mob-title-brand {
         display: block;
 }
 
-  main.about-us .g-block-div .g-block__item img {
+  main.about-us .g-block-div .g-block__item img,
+    main.opt .g-block-div .g-block__item img  {
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
