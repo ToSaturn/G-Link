@@ -47,6 +47,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 
 
 @font-face {
@@ -1788,11 +1795,167 @@ p.m-name-cat {
 .g-block-flex.mobile {
     display: none;
 }
+main.about-us .g-block-div .g-block__item {
+    background: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 0;
+    height: auto;
+    position: relative;
+    -webkit-box-shadow: inset 0px -59px 46px #0000009c;
+    box-shadow: none;
+}
+main.about-us .g-block-div .g-block__item img {
+    width: 100%;
+    display: block;
+    max-width: none;
+    margin: 0;
+    position: relative;
+    z-index: -1;
+}
+main.about-us .g-block-info p.g-text-title {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 36.4px;
+    margin-bottom: 12px;
+    margin-top: 24px;
+}
+.g-block-grid.mobile {
+    display: none;
+}
+a.g-but-white.g-but, a.g-but-white.g-but:active, a.g-but-white.g-but:hover {
+    color: #252525;
+}
+p.info-name.mob-title-brand {
+    display: none;
+}
+
 
 
 
 
 @media(max-width: 720px) {
+.about-us p.g-title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+}
+.about-us p.g-text-p {
+    margin-bottom: 24px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+}
+main.about-us .g-block-info p.g-text-title {
+    margin-bottom: 12px;
+    margin-top: 24px;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 36.4px;
+    text-align: left;
+}
+main.about-us p.g-block__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.8px;
+    text-align: left;
+}
+.g-block-brands {
+    padding: 0 0 24px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 24px;
+    grid-column-gap: 24px;
+}
+p.info-name.mob-title-brand {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: left;
+        display: block;
+}
+
+  main.about-us .g-block-div .g-block__item img {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    display: block;
+    max-width: none;
+    margin: 0 auto;
+    position: relative;
+    z-index: -1;
+    height: 275px;
+}
+  a.g-but-white.g-but, a.g-but-white.g-but:active, a.g-but-white.g-but:hover {
+    padding: 20px 24px;
+    border-radius: 8px;
+    background: #F3F3F3;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    width: auto;
+    display: block;
+    margin-top: 40px;
+    text-align: center;
+    color: #252525;
+}
+.g-banner-but {
+    margin: 40px 0;
+    background: #252525;
+    height: 687px;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+    padding: 24px 16px;
+}
+.g-banner-but img {
+    position: absolute;
+    right: 0;
+    top: auto;
+    bottom: 0;
+}
+  p.g-banner-title {
+    color: white;
+    max-width: 437px;
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+}
+p.g-banner-text {
+    color: white;
+    max-width: 688px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+}
+  .g-block-grid.mobile div:last-child {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 10px 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+}
+  .g-block-grid.mobile div img {
+    width: 100%;
+    padding: 0;
+    max-width: -webkit-fill-available;
+}
+  .g-block-grid.mobile {
+    display: block;
+}
+  .g-block-grid.pc {
+    display: none;
+}
   .g-filter-buttons {
     position: fixed;
     bottom: 24px;
