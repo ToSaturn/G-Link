@@ -68,6 +68,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 
 
 @font-face {
@@ -2610,6 +2617,24 @@ p.info-name {
     margin-top: 24px;
 }
 .g-product-photo img {
+    width: 100%;
+}
+main.contacts .g-block-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+.g-block-contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+.g-block-contacts {
+    margin-top: 24px;
+}
+main.contacts .g-block-info iframe {
     width: 100%;
 }
 }
