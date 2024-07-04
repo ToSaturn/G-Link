@@ -2086,9 +2086,10 @@ main.uslovia .g-name-block {
 .g-basket-tov-cena.mobile {
     display: none;
 }
-
-
-
+.g-catalog-tovar .g-tover__item {
+	margin: 0;
+	height: fit-content;
+}
 
 
 @media(max-width: 720px) {
