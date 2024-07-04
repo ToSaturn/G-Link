@@ -75,6 +75,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 
 
 @font-face {
@@ -1858,11 +1865,286 @@ p.info-name.mob-title-brand {
 .g-left-menu a, .g-left-menu a:active, .g-left-menu a:hover {
     color: #252525;
 }
+.g-basket-tovary {
+    border: 2px solid #E8E8E8;
+    border-radius: 16px;
+    padding: 20px;
+    max-width: 893px;
+    width: 100%;
+    margin-right: 24px;
+}
+.g-main-basket {
+      margin: 40px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.g-basket-tov__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.g-basket-tov__item:not(.g-basket-tov__item:last-child) {
+    border-bottom: 1px solid #E8E8E8;
+    margin-bottom: 24px;
+}
+img.g-bask-tov-img {
+    height: 166px;
+    width: auto;
+    margin-right: 10px;
+}
+p.g-basket-tov-name {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    color: #222222;
+    margin-right: 24px;
+    margin-bottom: 20px;
+}
+.g-basket-tov-info {
+    padding-bottom: 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+.basket-item-block-amount {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto 0 0;
+}
+input#basket-item-quantity-14 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    border: none;
+    width: 50px;
+}
+span.basket-item-amount-btn-minus, span.basket-item-amount-btn-plus {
+    width: 38px;
+    height: 38px;
+    background: #FFF3E4;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    text-align: -webkit-center;
+    border: 1px solid #FEAA00;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 27px;
+}
+input#basket-item-quantity-14 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    border: none;
+    width: 50px;
+    padding-top: 8px;
+}
+.g-basket-tov-cena p {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    float: right;
+}
+p.g-baslet-tov-price {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+}
+p.g-baslet-tov-skidka {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    color: #979BA4;
+    text-decoration: line-through;
+}
+.g-basket-tov-cena p {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    float: right;
+    margin: 0 0 0 auto;
+}
+p.g-baslet-tov-remove {
+    margin: auto 0 34px 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: left;
+    color: #979BA4;
+    cursor: pointer;
+}
+.g-basket-right-akcii {
+    padding: 24px 16px;
+    background: black;
+    border-radius: 16px;
+}
+.g-basket-right-akcii p:first-child {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: left;
+    color: white;
+}
+.g-basket-right-akcii p:last-child {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.8px;
+    text-align: left;
+    color: #979BA4;
+    margin-top: 4px;
+}
+.g-basket-itog {
+    border: 2px solid #E8E8E8;
+    border-radius: 16px;
+    padding: 20px;
+    margin-top: 12px;
+}
+p.g-basket-itog-title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: left;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #E8E8E8;
+    margin-bottom: 20px;
+}
+p.g-basket-itog__column span:first-child, p.g-basket-itog__summa span:first-child {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.2px;
+    text-align: left;
+}
+p.g-basket-itog__summa {
+    margin: 16px 0 20px;
+    border-bottom: 1px solid #E8E8E8;
+    padding-bottom: 20px;
+}
+p.g-basket-itog__column span:last-child, p.g-basket-itog__summa span:last-child {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+    letter-spacing: -0.02em;
+}
+.g-basket-itog p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+p.g-basket-itog-price span:first-child {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28.8px;
+    color: #979BA4;
+}
+p.g-basket-itog-price span:last-child {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    letter-spacing: -0.02em;
+}
+.g-basket-itog p:last-child {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.8px;
+    text-align: left;
+    margin-top: 8px;
+    color: #979BA4;
+}
+.g-basket-tov-cena {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+main.uslovia .g-name-block {
+    margin-top: 80px;
+}
+.g-basket-tov-cena.mobile {
+    display: none;
+}
+
 
 
 
 
 @media(max-width: 720px) {
+  main.uslovia .g-name-block {
+    margin-top: 80px;
+    display: block;
+}
+  p.g-basket-itog-price {
+    margin-bottom: 20px;
+}
+  .g-basket-tovary {
+      border: 2px solid #E8E8E8;
+      border-radius: 16px;
+      padding: 16px;
+      max-width: -webkit-fill-available;
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 40px;
+  }
+  p.g-basket-tov-name {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    color: #222222;
+    margin-right: 0;
+    margin-bottom: 20px;
+}
+.basket-item-block-amount {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0px 0 0 auto;
+}
+p.g-baslet-tov-remove {
+    margin: 0 0 24px auto!important;
+}
+  .g-basket-tov-cena p {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    float: right;
+    margin: 0 10px 0 0;
+}
+  .g-basket-tov-cena.pc {
+    display: none;
+}
+.g-basket-tov-cena.mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+}
+
   .dostavka .g-right-info h3 {
     font-size: 24px;
     font-weight: 700;
@@ -2636,5 +2918,23 @@ main.contacts .g-block-info {
 }
 main.contacts .g-block-info iframe {
     width: 100%;
+}
+.g-main-basket {
+    margin: 20px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+img.g-bask-tov-img {
+    height: 66px;
+    width: auto;
+    margin-right: 10px;
 }
 }
