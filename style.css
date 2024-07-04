@@ -2090,6 +2090,9 @@ main.uslovia .g-name-block {
 	margin: 0;
 	height: fit-content;
 }
+.g-catalog-tovar {
+	height: fit-content;
+}
 
 
 @media(max-width: 720px) {
