@@ -1744,6 +1744,21 @@ p.m-name-cat {
     padding-top: 20px;
     border-top: 1px solid #eaeaea;
 }
+.g-block-city-mob {
+    background: #F3F3F3;
+    height: 24px;
+    padding: 5px 0;
+}
+.g-block-city-mob .container {
+    display: flex;
+}
+.g-block-city-mob img {
+    margin-right: 6px;
+}
+.g-block-city-mob {
+    display: none;
+}
+
 
 
 
@@ -1751,6 +1766,9 @@ p.m-name-cat {
 
 
 @media(max-width: 720px) {
+  .g-block-city-mob {
+      display: block;
+  }
   .container {
       max-width: 1200px;
       padding: 0 16px;
@@ -1800,7 +1818,7 @@ p.m-name-cat {
     width: 100%;
     border-radius: 8px;
     background: #F3F3F3;
-    height: 28px;
+    height: 48px;
     border: 1px solid #E8E8E8;
     padding: 0 8px;
     -ms-flex-line-pack: center;
@@ -1808,6 +1826,7 @@ p.m-name-cat {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    position: relative;
 }
 p.g-search input[type="submit"] {
     font-size: 27px;
@@ -1820,6 +1839,11 @@ img.but-search {
     position: absolute;
     top: 12px;
     height: 21px;
+}
+.g-block-city-mob a, .g-block-city-mob a:active, .g-block-city-mob a:hover {
+    font-size: 13px;
+    font-weight: 500;
+    color: #252525;
 }
 .g-map-cart {
     display: none;
@@ -2121,5 +2145,45 @@ footer {
 img.burger {
   display: block;
 }
-
+.p-flex-city {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin-left: -16px;
+}
+.p-search img.but-search {
+    top: 12px;
+}
+.popup-city {
+    display: none;
+    position: fixed;
+    top: 0;
+    background: white;
+    max-width: -webkit-fill-available;
+    width: 100%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    padding: 16px;
+    overflow: auto;
+    z-index: 999;
+    height: auto;
+    max-height: -webkit-fill-available;
+}
+a.p-tag-city {
+    padding: 17px 0;
+    border-radius: inherit;
+    background: #ffffff;
+    border: none;
+    margin-right: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.8px;
+    text-align: left;
+    padding-left: 16px;
+}
+.p-city-main {
+    position: relative;
+    display: none;
+}
 }

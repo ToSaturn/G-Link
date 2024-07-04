@@ -24,7 +24,15 @@
 <body>
   <header>
 
+    <div class="g-block-city-mob" onclick="mapMobile();">
+      <div class="container">
+        <img src="img/Vector (1).svg" alt="">
+        <p onclick="popUp();"><a>Выбрать город</a></p>
+      </div>
+    </div>
+
     <div class="container">
+
       <div class="g-top-headre">
         <img src="img/Frame 1948758298.svg" alt="" class="burger" onclick="popMob();">
 
@@ -320,6 +328,17 @@
 
 
 <script>
+
+
+function mapMobile(){
+
+    document.querySelector('.popup-city').style.display='block';
+    document.querySelector('.fon').style.display='block';
+
+    document.querySelector('body').style.overflow='hidden';
+}
+
+
 function popUp(){
 
     document.querySelector('.popup-city').style.display='block';
