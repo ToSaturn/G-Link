@@ -111,4 +111,7 @@ document.querySelector('.fon').onсlick = function(){
     document.querySelector('body').style.overflow='auto';
 }
 
+
+
+
 }

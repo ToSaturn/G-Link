@@ -26,7 +26,7 @@
 
     <div class="container">
       <div class="g-top-headre">
-        <img src="img/Frame 1948758298.svg" alt="" class="burger">
+        <img src="img/Frame 1948758298.svg" alt="" class="burger" onclick="popMob();">
 
         <a href="/"><img src="img/Frame 1948758509.svg" alt=""></a>
 
@@ -339,9 +339,53 @@ function popUpFon(){
 
     document.querySelector('.popup-city').style.display='none';
     document.querySelector('.fon').style.display='none';
-
+    document.querySelector('.mobile-menu').style.display='none';
     document.querySelector('body').style.overflow='auto';
 }
+
+function popMob(){
+
+    document.querySelector('.mobile-menu').style.display='block';
+    document.querySelector('.fon').style.display='block';
+    document.querySelector('body').style.overflow='hidden';
+}
+
+function popClMob(){
+
+    document.querySelector('.mobile-menu').style.display='none';
+    document.querySelector('.fon').style.display='none';
+    document.querySelector('.m-sub-block').style.display='none';
+    document.querySelector('body').style.overflow='auto';
+}
+
+
+function menuLi(){
+    document.querySelector('.m-sub-block').style.display='block';
+
+
+    // let elems = document.querySelectorAll('.m-name-menu');
+    //
+    //   for(let elem of elems) {
+    //       elem.onclick=function(){
+    //           let a = elem.children[0];
+    //          console.log($(this).text());
+    //           document.querySelector('p.m-name-cat').innerText=a.innerText;
+    //       }
+    //   }
+// document.querySelector('p.m-name-cat').innerText=a.innerText;
+
+
+}
+
+
+function subClose(){
+    document.querySelector('.m-sub-block').style.display='none';
+}
+
+
+
+
+
 </script>
 
 
@@ -460,6 +504,42 @@ function popUpFon(){
   </div>
 </div>
 
+
+
+<div class="mobile-menu">
+  <div class="title-m-menu">
+    <div class="m-sub-block">
+      <img src="img/Button Arrow (2).svg" alt="" onclick="subClose()">
+      <p class="m-name-cat"></p>
+    </div>
+    <img src="img/Vector (5).svg" onclick="popClMob();" alt="">
+  </div>
+  <div class="mob-menu">
+    <ul class="m-top-menu">
+      <li   onclick='menuLi();'><a class="m-name-menu">Охота</a>
+        <ul class="m-sub-top-menu">
+          <li><a>Категория 1</a></li>
+          <li><a>Категория 2</a></li>
+          <li><a>Категория 3</a></li>
+        </ul>
+      </li>
+      <li  onclick='menuLi();'><a  class="m-name-menu">Электроника</a>
+        <ul class="m-sub-top-menu">
+          <li><a>Категория 1</a></li>
+          <li><a>Категория 2</a></li>
+          <li><a>Категория 3</a></li>
+        </ul>
+      </li>
+      <li   onclick='menuLi();'><a class="m-name-menu">Одежда</a></li>
+    </ul>
+    <div class="m-bottom-menu">
+      <p><a>О нас</a></p>
+      <p><a>B2B</a></p>
+      <p><a>Доставка и оплата</a></p>
+      <p><a>Контакты</a></p>
+    </div>
+  </div>
+</div>
   </footer>
 
 
