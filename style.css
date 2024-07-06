@@ -2093,6 +2093,9 @@ main.uslovia .g-name-block {
 .g-catalog-tovar {
 	height: fit-content;
 }
+.g-filter-category p a, .g-filter-category p a:active, .g-filter-category p a:hover {
+  color: #252525;
+}
 
 
 @media(max-width: 720px) {
