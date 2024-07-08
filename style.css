@@ -1,86 +1,4 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
 
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
 
 
 
@@ -2088,17 +2006,104 @@ main.uslovia .g-name-block {
 }
 .g-catalog-tovar .g-tover__item {
 	margin: 0;
+	height: -webkit-fit-content;
+	height: -moz-fit-content;
 	height: fit-content;
 }
 .g-catalog-tovar {
+	height: -webkit-fit-content;
+	height: -moz-fit-content;
 	height: fit-content;
 }
 .g-filter-category p a, .g-filter-category p a:active, .g-filter-category p a:hover {
   color: #252525;
 }
+.g-product-pg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.pagination {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.pagination a, .pagination a:active, .pagination a:active {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #222222;
+}
+.pagination .pag-pages a {
+    margin: 0 4px;
+    padding: 5px 14px;
+}
+.pagination .pre-pag, .pagination .next {
+    -ms-flex-line-pack: center;
+        align-content: center;
+    margin: 0 40px;
+}
+.pre-pag a {
+    margin-left: 25px;
+}
+.next a {
+    margin-right: 25px;
+}
+.pg-active {
+    background: #FEAA00;
+    border-radius: 8px;
+}
+a.pg-active, a.pg-active:active, a.pg-active:hover {
+    color: white;
+}
+.g-catalog-tovar {
+    padding-bottom: 40px;
+}
+
+
+
 
 
 @media(max-width: 720px) {
+  .g-catalog-tovar {
+      padding-bottom: 0px;
+  }
+
+  .pagination .pre-pag a:first-child, .pagination .next a:last-child {
+    display: none;
+}
+  .pagination .pre-pag, .pagination .next {
+    -ms-flex-line-pack: center;
+        align-content: center;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+  .pagination {
+    margin: 24px 0;
+}
+.pagination {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
   main.uslovia .g-name-block {
     margin-top: 80px;
     display: block;
