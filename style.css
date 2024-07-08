@@ -2105,6 +2105,16 @@ border-radius: 8px;
 
 
 @media(max-width: 720px) {
+  .slick-dots li button:before {
+    font-size: 9px!important;
+}
+  .slick-dots li {
+    margin: 0!important;
+}
+  .slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: #FEAA00!important;
+}
   .small-photo  .slick-track {
     display: -webkit-box;
     display: -ms-flexbox;
