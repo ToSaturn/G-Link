@@ -88,16 +88,36 @@
           <div class="block-small-photo">
             <a class="slick-prev-photo"><img src="img/Button Arrow.svg"></a>
             <div class="small-photo">
-              <img src="img/image 44 (1).png" alt="">
-              <img src="img/image 44 (1).png" alt="">
-              <img src="img/image 44 (1).png" alt="">
-              <img src="img/image 44 (1).png" alt="">
-              <img src="img/image 44 (1).png" alt="">
-              <img src="img/image 44 (1).png" alt="">
+              <img src="img/image 44 (1).png" alt="" onclick="slideImg()">
+              <img src="img/image 44 (3).png" alt="" onclick="slideImg()">
+              <img src="img/image 44 (4).png" alt="" onclick="slideImg()">
+              <img src="img/image 44 (5).png" alt="" onclick="slideImg()">
+              <img src="img/image 44 (6).png" alt="" onclick="slideImg()">
             </div>
             <a class="slick-next-photo"><img src="img/Button Arrow (1).svg"></a>
           </div>
         </div>
+
+
+<script type="text/javascript">
+function slideImg() {
+  let imgs = document.querySelectorAll('.slick-track img');
+  for (let img of imgs) {
+
+    img.onclick = function() {
+      let imgss = document.querySelectorAll('img.active-yellow');
+      for(let immg of imgss){
+      immg.classList.remove('active-yellow');
+    }
+
+      let link = img.getAttribute('src');
+      document.querySelector('.g-product-photo>img').setAttribute('src', link);
+      img.classList.add('active-yellow');
+    }
+  }
+}
+</script>
+
 
         <div class="g-product-param">
           <p class="param-title">Харастеристики</p>
@@ -420,6 +440,11 @@
         aboutText.style.display = 'none';
         otzyvyText.style.display = 'block';
       }
+
+
+
+
+
     </script>
   </main>
 

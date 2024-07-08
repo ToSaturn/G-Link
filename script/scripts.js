@@ -114,4 +114,17 @@ document.querySelector('.fon').onсlick = function(){
 
 
 
+// -----------------слайдер товаров---------------------
+
+function slideImg() {
+  let imgs = document.querySelectorAll('.slick-track img');
+  for (let img of imgs) {
+    img.onclick = function() {
+      let link = img.getAttribute('src');
+      document.querySelector('.g-product-photo>img').setAttribute('src', link);
+      img.classList.add('.active-yellow');
+    }
+  }
+}
+
 }

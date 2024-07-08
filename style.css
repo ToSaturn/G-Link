@@ -1,7 +1,5 @@
 
 
-
-
 @font-face {
   font-family: 'Tilda Sans VF', sans-serif ;
   font-style: normal;
@@ -2069,12 +2067,86 @@ a.pg-active, a.pg-active:active, a.pg-active:hover {
 .g-catalog-tovar {
     padding-bottom: 40px;
 }
+.g-product-photo>img {
+    width: 100%;
+    height: auto;
+}
+.g-product-photo {
+    max-width: 466px;
+    width: 100%;
+    margin-right: 24px;
+    max-height: 628px;
+    height: 628px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.active-yellow{
+border: 1px solid #FEAA00;
+border-radius: 8px;
+}
+.g-product-photo .slick-track img {
+    cursor: pointer;
+    height: 72px;
+    width: auto!important;
+}
+
 
 
 
 
 
 @media(max-width: 720px) {
+  .small-photo  .slick-track {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+  .small-photo.slick-initialized.slick-slider {
+    width: 100%;
+}
+  .g-product-photo .slick-track img {
+    width: auto;
+}
+.g-product-photo .slick-track img {
+    cursor: pointer;
+    height: 100%;
+    width: auto!important;
+    max-height: 342px;
+}
+  .g-product-photo {
+    max-width: -webkit-fill-available;
+    width: 100%;
+    margin-right: 0;
+    max-height: -webkit-fit-content;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+  .g-product-photo img {
+    display: none;
+}
   .g-catalog-tovar {
       padding-bottom: 0px;
   }

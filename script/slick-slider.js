@@ -70,7 +70,20 @@ window.onload = function() {
     slidesToScroll: 1,
     arrows: true,
     prevArrow: $('.slick-prev-photo'),
-    nextArrow: $('.slick-next-photo')
+    nextArrow: $('.slick-next-photo'),
+    variableWidth: true,
+    responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+      slidesToShow:1,
+      slidesToScroll: 1,
+      arrows: false,
+      dots:true,
+      centerMode:true
+      }
+    }
+   ]
 
   });
 
