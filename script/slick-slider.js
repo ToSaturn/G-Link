@@ -87,4 +87,7 @@ window.onload = function() {
 
   });
 
+  $('.g-block-brands.no-slider').slick('unslick');
+
+
 }
