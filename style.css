@@ -2099,6 +2099,10 @@ border-radius: 8px;
     width: auto!important;
 }
 
+.g-block-brands.slick-initialized.slick-slider a, .g-block-brands.slick-initialized.slick-slider a:active, .g-block-brands.slick-initialized.slick-slider a:hover {
+    color: #222222;
+}
+
 
 
 
@@ -2861,6 +2865,9 @@ a.p-tag-city {
     max-width: -webkit-fill-available;
     margin: auto;
     padding: 16px;
+    z-index: 9999;
+    bottom: 0;
+    overflow: auto;
 }
 .g-catalog-tovar {
     width: 100%;
