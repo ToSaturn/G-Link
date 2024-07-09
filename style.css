@@ -326,6 +326,7 @@ main.opt .g-block-info {
     height: 123px;
 }
 .g-but.g-but-yellow {
+    cursor: pointer;
     border-radius: 8px;
     padding: 18px 0;
     background: #FEAA00;
