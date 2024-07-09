@@ -94,42 +94,23 @@
 
 
             <div class="g-form">
-              <div class="form">
+              <form class="form">
                 <p class="g-form-title">Заявка для оптовика</p>
-                <div class="g-form-block">
-                  <p class="g-name-input">Компания</p>
-                  <div class="g-form-input">
-                    Название компании
-                  </div>
-                </div>
-                <div class="g-form-block">
-                  <p class="g-name-input">Контактное лицо</p>
-                  <div class="g-form-input">
-                    Контактное лицо
-                  </div>
-                </div>
-                <div class="g-form-block">
-                  <p class="g-name-input">Телефон для связи</p>
-                  <div class="g-form-input">
-                    Тел.
-                  </div>
-                </div>
-                <div class="g-form-block">
-                  <p class="g-name-input">E-mail</p>
-                  <div class="g-form-input">
-                    E-mail
-                  </div>
-                </div>
-                <div class="g-form-block">
-                  <p class="g-name-input">Примечание</p>
-                  <div class="g-form-input">
-                    Примечание
-                  </div>
-                </div>
-                <a class="g-but g-but-yellow" href="">Отправить заявку</a>
-
-              </div>
+                <label class="g-name-input" for="fname">Компания</label>
+                <input class="g-form-input" type="text" id="company" name="company" placeholder="Название компании">
+                <label class="g-name-input" for="lname">Контактное лицо</label>
+                <input class="g-form-input" type="text" id="name" name="name" placeholder="Контактное лицо">
+                <label class="g-name-input" for="phone">Телефон для связи</label>
+                <input class="g-form-input" type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="Тел." />
+                <label class="g-name-input" for="email">E-mail</label>
+                <input class="g-form-input" type="email" id="email" name="email" placeholder="E-mail">
+                <label class="g-name-input" for="story">Примечание</label>
+                <textarea class="g-form-input" id="story" name="story" rows="5" cols="33" placeholder="Примечание"></textarea>
+                <input class="g-but g-but-yellow" type="submit" value="Отправить заявку" />
+              </form>
             </div>
+
+
 
   </div>
     </main>
