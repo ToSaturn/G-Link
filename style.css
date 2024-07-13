@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 
 
 
@@ -2071,7 +2078,14 @@ main.uslovia .g-name-block {
 	margin: 0;
 	height: -webkit-fit-content;
 	height: -moz-fit-content;
-	height: fit-content;
+	height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
 }
 .g-catalog-tovar {
 	height: -webkit-fit-content;
@@ -2140,8 +2154,8 @@ a.pg-active, a.pg-active:active, a.pg-active:hover {
     max-width: 466px;
     width: 100%;
     margin-right: 24px;
-    max-height: 628px;
-    height: 628px;
+    max-height: 536px;
+    height: 536px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2189,7 +2203,28 @@ p.param-title {
     grid-column-gap: 10px;
     grid-row-gap: 10px;
 }
-
+.product-item-info-container.product-item-hidden a.btn.btn-link.btn-sm[rel="nofollow"] {
+    margin-top: 24px;
+    background: #d7d6d4;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 56px;
+    border-radius: 8px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: center;
+    cursor: pointer;
+    color: #252525;
+}
 
 
 
