@@ -1,9 +1,4 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
+
 
 
 
@@ -1817,6 +1812,8 @@ main.opt .g-block-div .g-block__item {
     box-shadow: none;
     margin: auto;
 height: 223px;
+width: -webkit-fit-content;
+width: -moz-fit-content;
 width: fit-content;
         border-radius: 16px;
 }
@@ -2185,7 +2182,9 @@ p.param-title {
     padding: 0;
 }
 .col-md-12 {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 10px 1fr;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
