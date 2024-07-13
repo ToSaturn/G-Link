@@ -2230,6 +2230,31 @@ p.param-title {
 
 
 @media(max-width: 720px) {
+  .g-map-cart div:last-child {
+    background: #F3F3F3;
+    border-radius: 8px;
+    width: 56px;
+    height: 48px;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    text-align: center;
+    border: 1px solid #E8E8E8;
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 5px 0 15px;
+    margin: 0 0 0 10px;
+}
+p.price-cart {
+    display: none;
+}
   .slick-dots li button:before {
     font-size: 9px!important;
 }
@@ -2588,9 +2613,7 @@ main.about-us .brand-block {
 main.about-us  p.g-banner-text {
     margin-bottom: 26px;
 }
-  .g-block-basket {
-      display: none!important;
-  }
+
 .g-map-cart .g-block-city{
   display: none!important;
 }
@@ -2626,9 +2649,12 @@ main.about-us  p.g-banner-text {
     justify-content: space-between;
     padding: 8px 0;
 }
+.g-map-cart {
+    width: 56%;
+}
 .g-search {
     margin: auto auto auto 0;
-    max-width: -webkit-fill-available;
+    max-width: max-content;
     width: 100%;
     border-radius: 8px;
     background: #F3F3F3;
@@ -2659,9 +2685,7 @@ img.but-search {
     font-weight: 500;
     color: #252525;
 }
-.g-map-cart {
-    display: none;
-}
+
 .g-menu-header:first-child li:first-child {
     margin-left: 0px;
 }
