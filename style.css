@@ -2598,6 +2598,130 @@ main.g-main .container {
 
 
 
+
+/* ----------------------правки - оформление------------------- */
+
+.bx-soa-section {
+    border: 2px solid #EFEFEF!important;
+    border-radius: 16px!important;
+    padding: 20px!important;
+}
+.bx-soa-section-title-container {
+    overflow: hidden!important;
+    background: #f2f5f700!important;
+    padding: 7px 0!important;
+    font-size: 14px!important;
+}
+a.bx-soa-editstep, a.bx-soa-editstep:active, a.bx-soa-editstep:hover {
+    display: inline!important;
+    vertical-align: middle!important;
+    border-bottom: none!important;
+    font-size: 20px!important;
+    font-weight: 500!important;
+    line-height: 26px!important;
+    text-align: left!important;
+    text-decoration: none!important;
+    border: none!important;
+    text-transform: capitalize!important;
+    color: #979BA4!important;
+}
+h2.bx-soa-section-title {
+    font-size: 20px!important;
+    font-weight: 700!important;
+    line-height: 26px!important;
+    text-align: left!important;
+    color: #222222!important;
+}
+.bx-soa-section {
+    margin-bottom: 12px!important;
+}
+.form-control {
+    -webkit-box-shadow: none!important!important;
+            box-shadow: none!important!important;
+    font-size: 16px!important!important;
+    font-weight: 400!important!important;
+    line-height: 19.2px!important!important;
+    padding: 20px 16px!important!important;
+    border-radius: 8px!important!important;
+    background: #F3F3F3!important!important;
+    margin-bottom: 20px!important!important;
+    margin-top: 6px!important!important;
+    color: #222222!important!important;
+    border: 1px solid #E8E8E8!important!important;
+}
+.bx-soa .bx-soa-customer-label, .bx-soa .bx-soa-custom-label, .bx-soa .form-group label {
+    position: relative!important;
+    padding-bottom: 0px!important;
+    font-size: 16px!important;
+    font-weight: 400!important;
+    line-height: 19.2px!important;
+    color: #979BA4!important;
+}
+.bx-blue .btn.btn-default {
+    cursor: pointer!important;
+    border-radius: 8px!important;
+    padding: 15px 50px!important;
+    background: #FEAA00!important;
+    width: auto!important;
+    display: block!important;
+    text-align: center!important;
+    font-size: 16px!important;
+    font-weight: 700!important;
+    line-height: 16px!important;
+    color: #222222!important;
+    border: none!important;
+}
+a.pull-left.btn.btn-default.btn-md {
+    background: #f3f3f3!important;
+}
+.bx-step-completed .bx-soa-section-content.container-fluid div {
+    font-size: 16px!important;
+    font-weight: 600!important;
+    line-height: 19.2px!important;
+    text-align: left!important;
+    color: #979BA4!important;
+}
+.bx-step-completed .bx-soa-section-content.container-fluid div strong {
+    display: none!important;
+}
+.bx-soa {
+    padding-bottom: 20px!important;
+    width: 65%!important;
+}
+.bx-soa-sidebar {
+    position: relative!important;
+    height: 100%!important;
+    width: 35%!important;
+}
+.bx-soa-cart-total {
+    border: 2px solid #EFEFEF!important;
+    border-radius: 16px!important;
+    padding: 20px!important;
+    max-width: 343px!important;
+    width: 100%!important;
+}
+
+.bx-soa-cart-total .bx-soa-cart-total-line:first-child .bx-soa-cart-t {
+    font-weight: var(--ui-font-weight-bold);
+    font-size: 16px!important;
+    font-weight: 600!important;
+    line-height: 19.2px!important;
+    text-align: left!important;
+    color: #222222!important;
+}
+.bx-soa-cart-total-line.bx-soa-cart-total-line-total span.bx-soa-cart-t {
+    font-size: 24px!important;
+    font-weight: 600!important;
+    line-height: 28.8px!important;
+    text-align: left!important;
+    color: #979BA4!important;
+}
+
+
+
+
+
+
 @media(max-width: 720px) {
   main.g-main .container {
       margin-bottom: 40px;
