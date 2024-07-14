@@ -1,13 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
-
-
-
 
 @font-face {
   font-family: 'Tilda Sans VF', sans-serif ;
@@ -2226,10 +2216,179 @@ p.param-title {
     cursor: pointer;
     color: #252525;
 }
+.basket-item-amount-filed-block {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+}
+.basket-item-amount-filed-block input {
+    border: none;
+}
+.main-box-order {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+}
+.g-form.order .form {
+    width: 100%;
+    margin: 0 24px 0 0;
+    max-width: -webkit-fill-available;
+}
+.g-form.order .form {
+    width: 100%;
+    margin: 0 24px 0 0;
+    max-width: -webkit-fill-available;
+}
+.g-basket-right.order {
+    max-width: 343px;
+    width: 100%;
+    margin-top: 28px;
+}
+.form-one-order>div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+.form-one-order {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.form-one-order {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    margin-bottom: 20px;
+}
+.form-two-order>div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+.form-two-order {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.form-two-order div:first-child {
+    margin-right: 20px;
+}
+.form-two-order div:last-child {
+    width: 100%;
+}
+.g-form.order input.g-but.g-but-yellow {
+    background: #f3f3f3;
+    color: #979BA4;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: center;
+}
+.g-form {
+    width: 100%;
+}
+.g-form.order input.g-but.g-but-yellow.active-but {
+    background: #FEAA00;
+    color: black;
+}
+.main-box-order div.form {
+    margin: 20px 20px  20px 0!important;
+}
+.main-box-order div.form div:first-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.g-form.order .form a, .g-form.order .form a:active, .g-form.order .form a:hover {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #FEAA00;
+}
+.g-form.order .form>div:first-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #E8E8E8;
+}
+
+
 
 
 
 @media(max-width: 720px) {
+  .g-basket-right.order {
+    max-width: -webkit-fill-available;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+  .main-box-order div.form {
+    margin: 20px 0 0!important;
+}
+  .g-form.order .form {
+    width: 100%;
+    margin: 0;
+    max-width: -webkit-fill-available;
+}
+  .main-box-order {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+  .form-one-order {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-column-gap: 20px;
+    margin-bottom: 0px;
+}
+.form-two-order div:first-child {
+    margin-right: 0;
+}
+.form-two-order {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+  .basket-checkout-block {
+    width: auto!important;
+}
   .g-map-cart div:last-child {
     background: #F3F3F3;
     border-radius: 8px;
@@ -2654,6 +2813,8 @@ main.about-us  p.g-banner-text {
 }
 .g-search {
     margin: auto auto auto 0;
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
     max-width: max-content;
     width: 100%;
     border-radius: 8px;
