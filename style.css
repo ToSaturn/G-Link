@@ -2640,19 +2640,7 @@ ul.sub-menu {
 
 
 /* ----------------------правки - оформление------------------- */
-.col-sm-12.bx-soa-customer {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-    grid-column-gap: 10px;
-}
-.form-group.bx-soa-customer-field[data-property-id-row="5"] {
-    -ms-grid-column: 1;
-        grid-column-start: 1;
-    -ms-grid-column-span: 0;
-    grid-column-end: 1;
-}
+
 .bx-soa-section {
     border: 2px solid #EFEFEF!important;
     border-radius: 16px!important;
@@ -2814,6 +2802,19 @@ div#bx-soa-properties .bx-soa-more-btn.col-xs-12 a {
 @media(max-width: 720px) {
 
 /* ------------------правки - оформление------------------- */
+.col-sm-12.bx-soa-customer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-column-gap: 10px;
+}
+.form-group.bx-soa-customer-field[data-property-id-row="5"] {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-column-span: 0;
+    grid-column-end: 1;
+}
 
 .col-sm-5.bx-soa-pp-desc-container {
     padding-top: 20px;
