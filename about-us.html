@@ -104,7 +104,7 @@
         <img src="img/Frame 1948758733.png" alt="">
         <p class="g-banner-title">Хотите стать нашим партнером?</p>
         <p class="g-banner-text">Мы гарантируем высокое качество товаров, превосходный сервис и уникальные предложения для наших партнеров</p>
-        <a href="" class="g-but-white g-but">Отправить заявку</a>
+        <a onclick="zayvPop()" class="g-but-white g-but">Отправить заявку</a>
       </div>
 
       <div class="g-block-info">
@@ -261,6 +261,68 @@
 </div>
 
 </div>
+
+
+
+
+<div class="popup-opt">
+  <div class="g-form">
+    <form class="form">
+
+        <p class="g-form-title">Заявка для оптовика<img class="p-close" src="img/Vector (5).svg" onclick="zayvCl()"></p>
+
+        <div class="">
+          <label class="g-name-input" for="lname">Компания</label>
+          <input class="g-form-input" type="text" id="company" name="company" placeholder="Название компании">
+        </div>
+        <div class="">
+          <label class="g-name-input" for="lname">Контактное лицо</label>
+          <input class="g-form-input" type="text" id="name" name="name" placeholder="Контактное лицо">
+        </div>
+        <div class="">
+          <label class="g-name-input" for="phone">Телефон для связи</label>
+          <input class="g-form-input" type="tel" id="phone" name="phone" placeholder="Тел." />
+        </div>
+        <div class="">
+          <label class="g-name-input" for="email">E-mail</label>
+          <input class="g-form-input" type="email" id="email" name="email" placeholder="E-mail">
+        </div>
+
+      <label class="g-name-input" for="story">Примечание</label>
+      <textarea class="g-form-input" id="story" name="story" rows="5" cols="33" placeholder="Примечание"></textarea>
+      <input class="g-but g-but-yellow" type="submit" value="Отправить заявку" />
+    </form>
+  </div>
+</div>
+
+<div class="fon" onclick="popUpFon()"></div>
+
+
+<script type="text/javascript">
+// ------------------------открытие-закрытие попапа заявок на опт--------------------------
+
+
+function zayvPop(){
+        document.querySelector('.popup-opt').style.display='block';
+    document.querySelector('.fon').style.display='block';
+    document.querySelector('body').style.overflow='hidden';
+}
+
+function zayvCl(){
+  document.querySelector('.popup-opt').style.display='none';
+  document.querySelector('.fon').style.display='none';
+  document.querySelector('body').style.overflow='auto';
+}
+
+function popUpFon(){
+    document.querySelector('.popup-opt').style.display='none';
+    document.querySelector('.fon').style.display='none';
+    document.querySelector('body').style.overflow='auto';
+}
+</script>
+
+
+
     </footer>
 
   </body>

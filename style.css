@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 
 @font-face {
   font-family: 'Tilda Sans VF', sans-serif ;
@@ -2430,7 +2437,8 @@ p.otzyvy-text-desk:last-child {
 .popup-otzyvy .form {
     background: white;
 }
-.popup-otzyvy p.g-form-title img {
+.popup-otzyvy p.g-form-title img,
+.popup-opt p.g-form-title img {
     margin: 7px 0 0;
     float: right;
     cursor: pointer;
@@ -2454,7 +2462,7 @@ p.otzyvy-text-desk:last-child {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 20px;
 }
-.popup-otzyvy {
+.popup-otzyvy, .popup-opt {
     position: fixed;
     z-index: 999;
     display: none;
@@ -2467,7 +2475,8 @@ p.otzyvy-text-desk:last-child {
         width: -moz-max-content;
         width: max-content;
 }
-.popup-otzyvy .g-form {
+.popup-otzyvy .g-form,
+.popup-opt .g-form {
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
@@ -2477,15 +2486,59 @@ main.opt .g-block-info .g-block__item {
     height: auto!important;
     margin: 20px;
 }
+.popup-opt form.form>div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+.popup-opt .form {
+    background: white;
+}
+.g-banner-but a.g-but-white.g-but {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    z-index: 999;
+}
+.g-banner-but img {
+    z-index: 0;
+}
 
-
-
-
-
-
+.popup-opt .g-form {
+    max-width: 588px;
+    width: 100%!important;
+}
+.popup-opt {
+    max-width: 588px;
+    width: 100%;
+}
+main.about-us .g-block__item {
+    height: auto!important;
+}
+main.about-us .g-block__item {
+    height: auto!important;
+    margin: 20px !important;
+}
+main.g-main .container {
+    margin-bottom: 100px;
+}
 
 
 @media(max-width: 720px) {
+  main.g-main .container {
+      margin-bottom: 40px;
+  }
+  .popup-opt {
+    overflow: auto;
+}
   main.opt .form {
       width: 100%;
       max-width: -webkit-fill-available;
