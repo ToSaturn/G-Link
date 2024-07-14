@@ -2578,7 +2578,15 @@ main.g-main .container {
 .search-page small a {
     color: #feaa00;
 }
-
+.btn-link.product-item-detail-buy-button {
+    height: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20.8px;
+    color: #DC4A4C;
+    margin: 0;
+    text-transform: math-auto;
+}
 
 
 
