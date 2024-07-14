@@ -1883,11 +1883,14 @@ p.info-name.mob-title-brand {
     border-bottom: 1px solid #E8E8E8;
     margin-bottom: 24px;
 }
-img.g-bask-tov-img {
+.main-box-order img.g-bask-tov-img {
     height: max-content;
     width: -webkit-fill-available;
     margin-right: 10px;
     max-width: 200px;
+}
+p.g-basket-itog-price span:last-child {
+    color: #222222;
 }
 p.g-basket-tov-name {
     font-size: 20px;
