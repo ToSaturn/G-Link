@@ -2636,18 +2636,18 @@ h2.bx-soa-section-title {
     margin-bottom: 12px!important;
 }
 .form-control {
-    -webkit-box-shadow: none!important!important;
-            box-shadow: none!important!important;
-    font-size: 16px!important!important;
-    font-weight: 400!important!important;
-    line-height: 19.2px!important!important;
-    padding: 20px 16px!important!important;
-    border-radius: 8px!important!important;
-    background: #F3F3F3!important!important;
-    margin-bottom: 20px!important!important;
-    margin-top: 6px!important!important;
-    color: #222222!important!important;
-    border: 1px solid #E8E8E8!important!important;
+    -webkit-box-shadow: none!important;
+            box-shadow: none!important;
+    font-size: 16px!important;
+    font-weight: 400!important;
+    line-height: 19.2px!important;
+    padding: 20px 16px!important;
+    border-radius: 8px!important;
+    background: #F3F3F3!important;
+    margin-bottom: 20px!important;
+    margin-top: 6px!important;
+    color: #222222!important;
+    border: 1px solid #E8E8E8!important;
 }
 .bx-soa .bx-soa-customer-label, .bx-soa .bx-soa-custom-label, .bx-soa .form-group label {
     position: relative!important;
@@ -2716,7 +2716,10 @@ a.pull-left.btn.btn-default.btn-md {
     text-align: left!important;
     color: #979BA4!important;
 }
-
+div#bx-soa-properties .bx-soa-more-btn.col-xs-12 a {
+    width: 100%!important;
+    max-width: none;
+}
 
 
 
