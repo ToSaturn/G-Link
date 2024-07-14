@@ -2723,6 +2723,77 @@ a.pull-left.btn.btn-default.btn-md {
 
 
 @media(max-width: 720px) {
+
+/* ------------------правки - оформление------------------- */
+
+
+.bx-soa {
+    padding-bottom: 20px;
+    width: 100%;
+}
+.bx-soa-cart-total {
+  padding: 10px;
+    max-width: none;
+    width: 100%;
+}
+.bx-soa-section {
+    padding: 0;
+}
+.bx-soa-editstep {
+    font-size: 16px;
+    line-height: 18px;
+}
+h2.bx-soa-section-title.col-sm-9 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.bx-soa-section-title-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+h2.bx-soa-section-title {
+    font-size: 16px!important;
+    font-weight: 700!important;
+    line-height: 17px;
+    text-align: left;
+    color: #222222;
+}
+h2.bx-soa-section-title {
+    width: 100%;
+}
+.col-xs-12.col-sm-3.text-right {
+    width: auto;
+}
+.bx-soa-sidebar {
+    display: none;
+}
+.bx-soa-item-imgcontainer {
+    border: none;
+}
+.bx-soa-item-td.bx-soa-item-properties {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-bottom: 1px solid #979ba41f;
+}
+.bx-soa-item-title a {
+    color: #222222;
+}
+.bx-blue .btn.btn-default {
+    padding: 12px 38px;
+    font-size: 14px;
+}
+/* ----------------------------------- */
+
+
+
+
+
   main.g-main .container {
       margin-bottom: 40px;
   }
