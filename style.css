@@ -2801,7 +2801,11 @@ div#bx-soa-properties .bx-soa-more-btn.col-xs-12 a {
 form#bx-soa-order-form {
     margin-top: 20px;
 }
-
+.container_custom {
+    max-width: 1440px;
+    padding: 0 120px;
+    margin: auto;
+}
 
 
 
@@ -3395,6 +3399,11 @@ main.about-us .brand-block {
   }
   .container {
       max-width: 1200px;
+      padding: 0 16px;
+      margin: auto;
+  }
+  .container_custom {
+      max-width: 1440px;
       padding: 0 16px;
       margin: auto;
   }
