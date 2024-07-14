@@ -95,19 +95,30 @@ function popUp(){
     document.querySelector('body').style.overflow='hidden';
 }
 
-document.querySelector('.p-close').onсlick = function(){
 
+function otzyvyPop(){
+        document.querySelector('.popup-otzyvy').style.display='block';
+    document.querySelector('.fon').style.display='block';
+    document.querySelector('body').style.overflow='hidden';
+}
+
+function otzyvyCl(){
+  document.querySelector('.popup-otzyvy').style.display='none';
+  document.querySelector('.fon').style.display='none';
+  document.querySelector('body').style.overflow='auto';
+}
+
+
+document.querySelector('.p-close').onсlick = function(){
     document.querySelector('.popup-city').style.display='none';
     document.querySelector('.fon').style.display='none';
-
     document.querySelector('body').style.overflow='auto';
 }
 
 document.querySelector('.fon').onсlick = function(){
-
+    document.querySelector('.popup-otzyvy').style.display='none';
     document.querySelector('.popup-city').style.display='none';
     document.querySelector('.fon').style.display='none';
-
     document.querySelector('body').style.overflow='auto';
 }
 

@@ -2333,12 +2333,211 @@ p.param-title {
     padding-bottom: 20px;
     border-bottom: 1px solid #E8E8E8;
 }
+.product-info-otzyvy p.info-name {
+    margin-bottom: 12px;
+}
+p.otzyvy-count {
+    margin-bottom: 40px;
+    color: #5D5D5D;
+}
+.otzyvy-item {
+    padding: 24px 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 16px;
+    background: #F6F6F6;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: auto;
+}
+.otzyvy-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 32px;
+}
+.otzyvy-title p:first-child {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    margin-right: 32px;
+    color: #979BA4;
+}
+.otzyvy-title p:last-child {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #979BA4;
+}
+p.otzyvy-text-title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #222222;
+    margin-bottom: 12px;
+}
+p.otzyvy-text-desk {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 32px;
+    color: #222222;
+}
+p.otzyvy-text-desk:last-child {
+    margin-bottom: 0;
+}
+.info-otzyvy {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.send-otzyvy {
+    padding: 20px;
+    border-radius: 16px;
+    border: 2px solid #EFEFEF;
+    margin-bottom: 12px;
+    max-width: 303px;
+    width: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    margin-left: 24px;
+}
+.send-otzyvy p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+.send-otzyvy p:first-child {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    margin-bottom: 10px;
+}
+.send-otzyvy p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+}
+.popup-otzyvy .form {
+    background: white;
+}
+.popup-otzyvy p.g-form-title img {
+    margin: 7px 0 0;
+    float: right;
+    cursor: pointer;
+}
+.g-form-title {
+    width: 100%;
+}
+.popup-otzyvy form.form>div>div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+.popup-otzyvy form.form>div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+}
+.popup-otzyvy {
+    position: fixed;
+    z-index: 999;
+    display: none;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+        width: -webkit-max-content;
+        width: -moz-max-content;
+        width: max-content;
+}
+.popup-otzyvy .g-form {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin: auto;
+}
 
 
 
 
 
 @media(max-width: 720px) {
+  .popup-otzyvy {
+    overflow: auto;
+}
+  .popup-otzyvy form.form>div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-column-gap: 20px;
+}
+  .otzyvy-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 24px;
+}
+
+  .otzyvy-title p:last-child {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #979BA4;
+}
+  p.otzyvy-text-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    color: #222222;
+    margin-bottom: 8px;
+}
+  p.otzyvy-text-desk {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 23px;
+    margin-bottom: 22px;
+    color: #222222;
+}
+  .send-otzyvy p {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 28px;
+  }
+  .send-otzyvy p:first-child {
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 24.8px;
+    margin-bottom: 10px;
+}
+  .send-otzyvy {
+    margin: 0 0 32px;
+    width: 100%;
+    max-width: -webkit-fill-available;
+}
+  .info-otzyvy {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+}
   .g-basket-right.order {
     max-width: -webkit-fill-available;
     width: 100%;

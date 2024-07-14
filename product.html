@@ -303,12 +303,39 @@ function slideImg() {
             EOTech EXPS3 - выбор для спецслужб США, прицел с различными режимами маркировки и уникальными сетками для разных дистанций и калибров.
           </p>
         </div>
+
+
         <div class="product-info-otzyvy" style="display:none">
-          <p class="info-name">Отзывы</p>
-          <p class="info-otzyvy">
-            Текст
-          </p>
+          <p class="info-name">Отзывы <span>Название товара</span></p>
+          <p class="otzyvy-count">Всего <span>8</span> отзывов</p>
+          <div class="info-otzyvy">
+            <div class="main-block-otzyvy">
+              <div class="otzyvy-item">
+                <div class="otzyvy-title">
+                  <p>Богданов А.</p>
+                  <p>12 марта 2023</p>
+                </div>
+                <div class="otzyvy-text">
+                  <p class="otzyvy-text-title">Плюсы</p>
+                  <p class="otzyvy-text-desk">EOTech EXPS3 - выбор для спецслужб США, прицел с различными режимами маркировки и уникальными сетками для разных дистанций и калибров.</p>
+                  <p class="otzyvy-text-title">Минусы</p>
+                  <p class="otzyvy-text-desk">Прицелы EOTech внимательно разработаны в каждом аспекте, включая электронику и материал корпуса. Их знаковая черта - прицельная марка в виде круга с линиями и точкой в центре. Диаметр круга 68 МОА, а точка 1 МОА, что обеспечивает точное определение зоны выстрела. Есть также специальные сетки под различные калибры и дистанции.</p>
+                  <p class="otzyvy-text-title">Комментарий</p>
+                  <p class="otzyvy-text-desk">Отличный продавец. Отзывчивый, легко идет на контакт</p>
+                </div>
+              </div>
+            </div>
+            <div class="send-otzyvy">
+              <p>Уже покупали этот товар?</p>
+              <p>Напишите отзыв, поделитесь своим мнением</p>
+              <a class="g-button-pay" onclick="otzyvyPop()">Написать отзыв</a>
+            </div>
+          </div>
         </div>
+
+
+
+
       </div>
 
       <div class="g-block-flex mobile">
@@ -442,9 +469,28 @@ function slideImg() {
       }
 
 
+// -------------------открытие-закрытие попапа с формой для отзыва---------------
+      function otzyvyPop(){
+              document.querySelector('.popup-otzyvy').style.display='block';
+          document.querySelector('.fon').style.display='block';
+          document.querySelector('body').style.overflow='hidden';
+      }
 
+      function otzyvyCl(){
+        document.querySelector('.popup-otzyvy').style.display='none';
+        document.querySelector('.fon').style.display='none';
+        document.querySelector('body').style.overflow='auto';
+      }
 
+      function popUpFon(){
+          document.querySelector('.popup-otzyvy').style.display='none';
+          document.querySelector('.popup-city').style.display='none';
+          document.querySelector('.fon').style.display='none';
+          document.querySelector('.mobile-menu').style.display='none';
+          document.querySelector('body').style.overflow='auto';
+      }
 
+// ------------------------------
     </script>
   </main>
 
@@ -455,7 +501,7 @@ function slideImg() {
 
       <div class="g-top-footer">
         <div class="g-logo-footer">
-          <a href="/"><img src="img/Frame 1948758509 (1).svg" alt=""></a>
+          <a href="/"><img src="img/Frame 1948758509 (1).svg" alt="" ></a>
           <p>Современная торгово-логистическая компания с обширным опытом и уникальной экспертизой</p>
         </div>
 
@@ -487,6 +533,50 @@ function slideImg() {
       </div>
 
     </div>
+
+
+
+
+<div class="popup-otzyvy">
+  <div class="g-form">
+    <form class="form">
+
+        <p class="g-form-title">Написать отзыв<img class="p-close" src="img/Vector (5).svg" onclick="otzyvyCl()"></p>
+
+      <div class="">
+        <div class="">
+          <label class="g-name-input" for="lname">Имя</label>
+          <input class="g-form-input" type="text" id="company" name="company" placeholder="Ваше имя">
+        </div>
+        <div class="">
+          <label class="g-name-input" for="lname">Фамилия</label>
+          <input class="g-form-input" type="text" id="name" name="name" placeholder="Ваша фамилия">
+        </div>
+      </div>
+      <div class="">
+        <div class="">
+          <label class="g-name-input" for="phone">Номер телефона</label>
+          <input class="g-form-input" type="tel" id="phone" name="phone" placeholder="Тел." />
+        </div>
+        <div class="">
+          <label class="g-name-input" for="email">E-mail</label>
+          <input class="g-form-input" type="email" id="email" name="email" placeholder="E-mail">
+        </div>
+      </div>
+      <label class="g-name-input" for="lname">Плюсы</label>
+      <input class="g-form-input" type="text" id="name" name="name" placeholder="Напишите о плюсах товара">
+      <label class="g-name-input" for="lname">Минусы</label>
+      <input class="g-form-input" type="text" id="name" name="name" placeholder="Напишите о минусах товара">
+      <label class="g-name-input" for="story">Комментарий</label>
+      <textarea class="g-form-input" id="story" name="story" rows="5" cols="33" placeholder="Напишите ваше мнение о товаре или магазине"></textarea>
+      <input class="g-but g-but-yellow" type="submit" value="Оправить отзыв" />
+    </form>
+  </div>
+</div>
+
+
+<div class="fon" onclick="popUpFon()"></div>
+
   </footer>
 
 </body>
