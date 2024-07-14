@@ -2601,6 +2601,14 @@ ul.g-menu-header:first-child {
 ul.g-menu-header:last-child {
     margin: 0 0 0 auto;
 }
+.g-menu-header:last-child li {
+    margin-left: 32px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+}
+
+
 
 
 /* ----------------------правки - оформление------------------- */
