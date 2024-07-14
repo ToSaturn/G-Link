@@ -2473,12 +2473,23 @@ p.otzyvy-text-desk:last-child {
     width: max-content;
     margin: auto;
 }
+main.opt .g-block-info .g-block__item {
+    height: auto!important;
+    margin: 20px;
+}
+
+
+
 
 
 
 
 
 @media(max-width: 720px) {
+  main.opt .form {
+      width: 100%;
+      max-width: -webkit-fill-available;
+  }
   .popup-otzyvy {
     overflow: auto;
 }
