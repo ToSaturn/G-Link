@@ -263,6 +263,30 @@
 </div>
 
 </div>
+
+
+
+
+
+
+<script type="text/javascript">
+
+// -----------------авто-увеличение ширины блока на странице Оофрмления-------------------
+if (document.querySelector('.bread a:last-child').innerText == 'Оформление заказа') {
+
+  let conts = document.querySelectorAll('.container');
+
+  for (let cont of conts){
+       cont.style.maxWidth='1440px';
+      cont.style.width='100%';
+  }
+
+}
+</script>
+
+
+
+
     </footer>
 
   </body>

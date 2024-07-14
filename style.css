@@ -2798,6 +2798,18 @@ div#bx-soa-properties .bx-soa-more-btn.col-xs-12 a {
     border-radius: 8px;
     outline: none;
 }
+form#bx-soa-order-form {
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
 
 @media(max-width: 720px) {
 
