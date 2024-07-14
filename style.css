@@ -2620,7 +2620,19 @@ ul.sub-menu {
 .popup-window.popup-window-with-titlebar.bx-blue .bx-blue .btn.btn-default {
     font-size: 14px!important;
 }
-
+.col-sm-12.bx-soa-customer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+}
+.form-group.bx-soa-customer-field[data-property-id-row="5"] {
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    -ms-grid-column-span: 2;
+    grid-column-end: 4;
+}
 
 
 
