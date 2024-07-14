@@ -710,6 +710,9 @@ p.g-whats img, p.g-teleg img {
     padding-right: 20px;
     padding-left: 20px;
     margin-left: -20px;
+        width: -webkit-max-content;
+        width: -moz-max-content;
+        width: max-content;
 }
 .g-menu-header:first-child li:first-child:hover {
     background: #FEAA00;
