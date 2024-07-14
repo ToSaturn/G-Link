@@ -113,20 +113,23 @@ p.g-text__item {
     top: 0;
 }
 p.g-banner-title {
-    font-size: 48px;
+    font-size: 29px;
     font-weight: 700;
     line-height: 52px;
     color: white;
     max-width: 437px;
     margin-bottom: 20px;
 }
+.g-basket-tov-info {
+    margin: 0 auto 0 0;
+}
 p.g-banner-text {
     color: white;
     max-width: 688px;
-    font-size: 24px;
+    font-size: 21px;
     font-weight: 400;
     line-height: 31.2px;
-    margin-bottom: 60px;
+    margin-bottom: 34px;
 }
 a.g-but-white.g-but {
     padding: 20px 24px;
@@ -1857,6 +1860,7 @@ p.info-name.mob-title-brand {
     max-width: 893px;
     width: 100%;
     margin-right: 24px;
+    height: max-content;
 }
 .g-main-basket {
       margin: 40px 0;
@@ -1880,9 +1884,10 @@ p.info-name.mob-title-brand {
     margin-bottom: 24px;
 }
 img.g-bask-tov-img {
-    height: 166px;
-    width: auto;
+    height: max-content;
+    width: -webkit-fill-available;
     margin-right: 10px;
+    max-width: 200px;
 }
 p.g-basket-tov-name {
     font-size: 20px;
