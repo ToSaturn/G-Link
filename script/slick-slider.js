@@ -22,7 +22,7 @@ window.onload = function() {
 
   $('.g-block-brands').slick({
     infinite: true,
-    slidesToShow: 5,
+    slidesToShow: 7,
     slidesToScroll: 1,
     arrows: true,
     prevArrow: $('.slick-prev-brand'),
