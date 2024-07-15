@@ -479,7 +479,7 @@ p.g-main-text {
 }
 .g-search {
     margin: auto auto auto 0;
-    max-width: 508px;
+    max-width: -webkit-fill-available;
     width: 100%;
     border-radius: 8px;
     background: #F3F3F3;
@@ -941,7 +941,7 @@ div.search-popup {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 80%;
+    width: auto;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: end;
