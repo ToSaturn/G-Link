@@ -919,6 +919,7 @@ p.g-search input[type="submit"] {
     padding: 0 16px 0 0;
     color: #949494;
     cursor: pointer;
+        width: 42px;
 }
 .two-i {
     width: 11px;
