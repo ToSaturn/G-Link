@@ -39,7 +39,7 @@ body {
     margin: auto;
 }
 h1 {
-    font-size: 44px;
+    font-size: 32px;
     font-weight: 700;
     line-height: 44px;
 }
@@ -57,11 +57,12 @@ p.g-text-p span {
     font-weight: 700;
 }
 p.g-text-p {
-    margin-bottom: 30px;
+    margin-bottom: 16px;
 }
-p.g-text-p span {
-    font-weight: 700;
-    font-size: 26px;
+p.g-text-p {
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 22px;
 }
 .g-block-flex {
     padding: 40px 0;
@@ -149,10 +150,16 @@ p.g-text__item {
     line-height: 26px;
 }
 p.g-title {
-    font-size: 38px;
+    font-size: 33px;
     font-weight: 700;
-    line-height: 38px;
-    margin-bottom: 14px;
+    line-height: 34px;
+    margin-bottom: 5px;
+}
+main.g-main .g-block-flex {
+    margin-bottom: -31px;
+}
+main.g-main .g-block-info {
+    margin-bottom: 20px;
 }
 p.g-text-p {
     font-size: 22px;
@@ -1018,7 +1025,7 @@ p.g-name-category {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 .g-main-box-brand a {
     -ms-flex-line-pack: center;
@@ -1031,7 +1038,7 @@ p.g-name-category {
 .g-tover__item {
     border-radius: 16px;
     border: 2px solid #EFEFEF;
-    padding: 20px;
+    padding: 14px;
     margin: 0 12px;
 }
 .g-tover__item img {
@@ -1043,7 +1050,7 @@ p.g-name-tover {
     font-size: 20px;
     font-weight: 600;
     line-height: 26px;
-    margin-bottom: 25px;
+    margin-bottom: 5px;
     max-height: 54px;
     min-height: 54px;
     overflow: hidden;
@@ -1072,6 +1079,7 @@ p.g-sub-price {
     text-decoration: line-through;
     color: #979BA4;
 }
+
 a.g-button-pay {
     margin-top: 24px;
     background: #FEAA00;
@@ -1094,6 +1102,14 @@ a.g-button-pay {
     cursor: pointer;
     color: #252525;
 }
+
+.g-catalog-tovar .g-tover__item a.g-button-pay {
+    margin-top: 8px;
+    height: 49px;
+    font-size: 16px;
+  }
+
+
 .g-name-block {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1123,7 +1139,7 @@ p.g-title {
     border: 2px solid #EFEFEF;
     padding: 20px;
     border-radius: 16px;
-    margin-bottom: 24px;
+    margin-bottom: 10px;
 }
 .g-main-catalog {
     display: -webkit-box;
@@ -1160,7 +1176,7 @@ p.g-title {
     line-height: 20.8px;
 }
 .g-filter-category p:not(.g-filter-category p.box-more) {
-    margin-bottom: 34px;
+    margin-bottom: 15px;
 }
 .g-filter-category p.more {
     margin-bottom: 0!important;
@@ -2083,17 +2099,19 @@ main.uslovia .g-name-block {
     display: none;
 }
 .g-catalog-tovar .g-tover__item {
-	margin: 0;
-	height: -webkit-fit-content;
-	height: -moz-fit-content;
-	height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
--webkit-box-orient: vertical;
--webkit-box-direction: normal;
+    margin: 0;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     -ms-flex-direction: column;
-        flex-direction: column;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
 }
 .g-catalog-tovar {
 	height: -webkit-fit-content;
@@ -3871,7 +3889,7 @@ a.p-tag-city {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 24px 1fr 24px 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-row-gap: 10px;
     grid-column-gap: 10px;
     height: -webkit-fill-available;
