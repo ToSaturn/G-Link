@@ -1172,8 +1172,8 @@ p.g-title {
     width: 100%;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 24px 1fr 24px 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 24px 1fr 24px 1fr 24px 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-row-gap: 24px;
     grid-column-gap: 24px;
     height: -webkit-fill-available;
@@ -3908,8 +3908,8 @@ a.p-tag-city {
     width: 100%;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 24px 1fr 24px 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-row-gap: 10px;
     grid-column-gap: 10px;
     height: -webkit-fill-available;
