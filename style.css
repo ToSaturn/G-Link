@@ -2682,7 +2682,7 @@ ul.sub-menu {
 .bx-soa-section {
     border: 2px solid #EFEFEF!important;
     border-radius: 16px!important;
-    padding: 20px!important;
+    padding: 12px!important;
 }
 .bx-soa-section-title-container {
     overflow: hidden!important;
@@ -2704,7 +2704,7 @@ a.bx-soa-editstep, a.bx-soa-editstep:active, a.bx-soa-editstep:hover {
     color: #979BA4!important;
 }
 h2.bx-soa-section-title {
-    font-size: 20px!important;
+    font-size: 17px!important;
     font-weight: 700!important;
     line-height: 26px!important;
     text-align: left!important;
