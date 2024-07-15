@@ -921,6 +921,19 @@ p.g-search input[type="submit"] {
     cursor: pointer;
         width: 42px;
 }
+div.search-popup-row {
+    background: #FFFFFF!important;
+    /* padding: 17px 20px 17px 20px!important; */
+}
+div.search-popup-row:not(div.search-popup-row:last-child) {
+    border-bottom: 1px solid #80808024!important;
+}
+div.search-popup {
+    border: 1px solid #feaa00!important;
+    border-radius: 8px!important;
+    padding: 17px !important;
+}
+
 .two-i {
     width: 11px;
 }
