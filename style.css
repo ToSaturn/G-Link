@@ -269,7 +269,7 @@ main.opt .g-block-info {
     margin: auto;
     border: 2px solid #EFEFEF;
     border-radius: 16px;
-    padding: 20px;
+    padding: 10px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -278,19 +278,36 @@ main.opt .g-block-info {
         -ms-flex-direction: column;
             flex-direction: column;
 }
+form.form input.g-but.g-but-yellow {
+    margin-top: 5px;
+}
 .g-form-title {
     font-size: 20px;
     font-weight: 700;
     line-height: 26px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     border-bottom: 1px solid #EFEFEF;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .g-name-input {
     font-size: 16px;
     font-weight: 400;
     line-height: 19.2px;
     color: #979BA4;
+}
+main.opt .g-form {
+    padding-top: 0;
+}
+main.opt .g-block-flex {
+    padding: 0px 0 30px;
+}
+main.opt p.g-text-title {
+    margin: 7px 0!important;
+    font-size: 25px!important;
+}
+main.opt p.g-block__text {
+    font-size: 17px;
+    margin-top: -10px;
 }
 .g-form-input::-webkit-input-placeholder {
     font-size: 16px;
@@ -327,13 +344,13 @@ main.opt .g-block-info {
     font-size: 16px;
     font-weight: 400;
     line-height: 19.2px;
-    padding: 14px 16px;
+    padding: 10px 16px;
     border-radius: 8px;
     background: #F3F3F3;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     margin-top: 6px;
     color: #222222;
-    border: 1px solid #E8E8E8
+    border: 1px solid #E8E8E8;
 }
 .g-form-block:nth-child(6) .g-form-input {
     height: 123px;
@@ -619,7 +636,7 @@ li.menu-item img {
     color: #FEAA00;
 }
 header {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 footer {
     padding-top: 56px;
@@ -719,7 +736,7 @@ p.g-whats img, p.g-teleg img {
     margin-left: -20px;
         width: -webkit-max-content;
         width: -moz-max-content;
-        width: max-content;
+        width: auto;
 }
 .g-menu-header:first-child li:first-child:hover {
     background: #FEAA00;
@@ -892,8 +909,12 @@ ul.sub-sub-sub-menu li:hover a {
     font-weight: 700;
 }
 ul.sub-menu li:hover {
-    background: #FFF3E4!important;
+    background: #feaa00 !important;
 }
+/* p.g-name-tover a {
+    font-size: 15px;
+    line-height: 14px!important;
+} */
 ul.sub-menu li {
     width: 220px;
 }
@@ -1076,7 +1097,7 @@ p.g-name-tover {
     display: flex;
 }
 p.g-main-price {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 24px;
     color: #222222;
@@ -1119,7 +1140,7 @@ a.g-button-pay {
 
 .g-catalog-tovar .g-tover__item a.g-button-pay {
     margin-top: 8px;
-    height: 49px;
+    height: 41px;
     font-size: 16px;
   }
 
@@ -1174,8 +1195,8 @@ p.g-title {
     display: grid;
     -ms-grid-columns: 1fr 24px 1fr 24px 1fr 24px 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-row-gap: 24px;
-    grid-column-gap: 24px;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
     height: -webkit-fill-available;
 }
 .g-filter-category {
@@ -1618,7 +1639,8 @@ p.param-title-info.active {
 }
 
 p.g-name-tover a, p.g-name-tover a:active, p.g-name-tover a:hover {
-    color: #979BA4;
+    color: #222222;
+    font-size: 15px;
 }
 img.but-search {
     position: absolute;
