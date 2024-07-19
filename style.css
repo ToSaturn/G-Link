@@ -1,5 +1,4 @@
 
-
 @font-face {
   font-family: 'Tilda Sans VF', sans-serif ;
   font-style: normal;
@@ -2885,13 +2884,56 @@ form#bx-soa-order-form {
     background-color: #feaa00!important;
     opacity: .8;
 }
-
+main.g-main .g-block-div .g-block__item {
+    cursor: pointer;
+}
 
 
 
 
 
 @media(max-width: 720px) {
+  .form-control {
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+    font-size: 16px!important;
+    font-weight: 400!important;
+    line-height: 19.2px!important;
+    padding: 16px 16px!important;
+    border-radius: 8px!important;
+    background: #F3F3F3!important;
+    margin-bottom: 0px!important;
+    margin-top: -1px!important;
+    color: #222222!important;
+    border: 1px solid #E8E8E8!important;
+}
+.bx-soa .bx-soa-customer-label, .bx-soa .bx-soa-custom-label, .bx-soa .form-group label {
+    position: relative!important;
+    padding-bottom: 0px!important;
+    font-size: 14px!important;
+    font-weight: 400!important;
+    line-height: 17.2px!important;
+    color: #979BA4!important;
+}
+.bx-soa-section-title-container {
+    overflow: hidden!important;
+    background: #f2f5f700!important;
+    padding: 4px 0!important;
+    font-size: 0px!important;
+}
+.bx-soa-section-content {
+    padding: 0;
+}
+  .basket-checkout-block {
+      display: block;
+      min-width: auto!important;
+      width: 100%;
+  }
+  .slick-slider {
+    height: auto;
+    overflow: hidden;
+    border-radius: 16px;
+}
 
   main.about-us .g-block__item {
     height: auto!important;
@@ -2944,14 +2986,29 @@ h2.bx-soa-section-title.col-sm-9 {
     display: flex;
 }
 h2.bx-soa-section-title {
-    font-size: 16px!important;
+    font-size: 14px!important;
     font-weight: 700!important;
-    line-height: 17px;
+    line-height: 17px!important;
     text-align: left;
     color: #222222;
 }
 h2.bx-soa-section-title {
     width: 100%;
+}
+.bx-soa {
+    max-width: none!important;
+}
+.bx-soa-section {
+    width: 100%;
+    max-width: -webkit-fill-available;
+}
+.bx-soa-section {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
 }
 .col-xs-12.col-sm-3.text-right {
     width: auto;
