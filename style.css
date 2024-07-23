@@ -501,6 +501,18 @@ p.g-main-text {
         -ms-grid-row-align: center;
         align-self: center;
 }
+header {
+    margin-bottom: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+header>.container {
+    background: white;
+}
+main {
+    padding-top: 150px;
+}
 .g-search {
     margin: auto auto auto 0;
     max-width: -webkit-fill-available;
@@ -594,7 +606,7 @@ p.price-cart a, p.price-cart a:active, p.price-cart a:hover {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 24px 0;
+    padding: 15px 0;
 }
 .g-bottom-header {
     background: #222222;
