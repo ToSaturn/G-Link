@@ -1,22 +1,22 @@
 window.onload = function() {
 
 
-  let mores = document.querySelectorAll('.more');
-
-  for (let more of mores) {
-
-    more.onclick = function() {
-
-      if (more.innerText == 'Показать все') {
-
-        more.previousElementSibling.style.height = 'auto';
-        more.innerText = 'Скрыть';
-      } else if (more.innerText == 'Скрыть') {
-        more.previousElementSibling.style.height = '100px';
-        more.innerText = 'Показать все';
-      }
-    }
-  }
+  // let mores = document.querySelectorAll('.more');
+  //
+  // for (let more of mores) {
+  //
+  //   more.onclick = function() {
+  //
+  //     if (more.innerText == 'Показать все') {
+  //
+  //       more.previousElementSibling.style.height = 'auto';
+  //       more.innerText = 'Скрыть';
+  //     } else if (more.innerText == 'Скрыть') {
+  //       more.previousElementSibling.style.height = '100px';
+  //       more.innerText = 'Показать все';
+  //     }
+  //   }
+  // }
 
 
 

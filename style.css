@@ -138,7 +138,12 @@ a.g-but-white.g-but {
     padding: 10px 0;
 }
 .product-item-image-original, .product-item-image-alternative {
-    height: 180px;
+    height: auto;
+}
+img.g-bask-tov-img {
+    width: 150px;
+    height: -webkit-fill-available;
+    margin-right: 10px;
 }
 .product-item-image-wrapper {
     padding-top: 83%;
@@ -260,7 +265,10 @@ main.opt .g-block-info {
     padding-top: 0;
 }
 .g-form {
-    padding: 40px 0 100px;
+    padding: 40px 0 60px;
+}
+.g-catalog-tovar .g-tover__item:hover {
+    border: 2px solid #feaa00;
 }
 .form {
     max-width: 548px;
@@ -3719,22 +3727,26 @@ img.but-search {
 p.g-main-price {
     color: #222222;
     margin-right: 16px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     line-height: 20px;
     letter-spacing: -0.02em;
     text-align: left;
+    margin: 3px 4px 0;
 }
 p.g-sub-price {
     -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    -ms-grid-row-align: center;
+    align-self: center;
     text-decoration: line-through;
     color: #979BA4;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
     line-height: 14px;
     letter-spacing: -0.02em;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
 }
 a.g-button-pay {
     margin-top: 8px;
@@ -3764,7 +3776,7 @@ a.g-button-pay {
 }
 p.g-name-tover {
     color: #979BA4;
-    margin-bottom: 8px;
+    margin-bottom: 0px;
     max-height: 43px;
     min-height: 43px;
     overflow: hidden;
@@ -3773,6 +3785,17 @@ p.g-name-tover {
     font-weight: 600;
     line-height: 20.8px;
     text-align: left;
+}
+.g-catalog-tovar .g-tover__item a.g-button-pay {
+    margin-top: 3px;
+    height: 32px;
+    font-size: 13px;
+        border-radius: 6px;
+}
+p.g-name-tover a, p.g-name-tover a:active, p.g-name-tover a:hover {
+    color: #222222;
+    font-size: 13px;
+    line-height: 13px;
 }
 .nut-banner-catalog {
     position: absolute;
