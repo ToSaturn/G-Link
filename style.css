@@ -926,7 +926,7 @@ ul.sub-menu li {
     width: 220px;
 }
 form.g-block-search {
-    width: 100%;
+    width: -webkit-fill-available;
 }
 .m-sub-block {
   display: none;
@@ -2901,6 +2901,18 @@ main.g-main .g-block-div .g-block__item {
 
 
 @media(max-width: 720px) {
+  header {
+      margin-bottom: 24px;
+      position: fixed;
+      z-index: 99;
+      width: -webkit-fill-available;
+  }
+header>.container {
+    background: white;
+}
+  main {
+    padding-top: 120px;
+}
   .form-control {
     -webkit-box-shadow: none!important;
     box-shadow: none!important;
