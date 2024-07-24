@@ -1195,9 +1195,9 @@ p.g-title {
 }
 .g-filter-category {
     border: 2px solid #EFEFEF;
-    padding: 20px;
+    padding: 12px;
     border-radius: 16px;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
 }
 .g-main-catalog {
     display: -webkit-box;
@@ -1234,7 +1234,7 @@ p.g-title {
     line-height: 20.8px;
 }
 .g-filter-category p:not(.g-filter-category p.box-more) {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 .g-filter-category p.more {
     margin-bottom: 0!important;
@@ -1245,15 +1245,32 @@ p.more {
 }
 .g-filter-main {
     border: 2px solid #EFEFEF;
-    padding: 20px;
+    padding: 10px;
     border-radius: 16px;
+}
+.bx-filter .bx-filter-input-container input {
+    width: -webkit-fill-available!important;
+}
+.check-container, .filter-title {
+    margin-bottom: 9px!important;
+}
+.bx-filter-parameters-box-container {
+    padding-bottom: 14px;
+}
+.filter-price {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.more-block {
+    margin: 0 0 0 auto;
 }
 p.name-filter {
     font-size: 20px;
     font-weight: 600;
     line-height: 26px;
     color: #222222;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 .g-filter-main label {
     font-size: 16px;
@@ -1345,7 +1362,7 @@ a {
 
 .box-more {
     overflow: hidden;
-    height: 100px;
+    height: auto;
 }
 .filter-title {
     display: -webkit-box;
@@ -2913,6 +2930,9 @@ main.g-main .g-block-div .g-block__item {
 
 
 @media(max-width: 720px) {
+  form.g-block-search {
+    margin-right: 13px;
+}
   header {
       margin-bottom: 24px;
       position: fixed;
