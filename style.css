@@ -1,4 +1,5 @@
 
+
 @font-face {
   font-family: 'Tilda Sans VF', sans-serif ;
   font-style: normal;
@@ -1258,8 +1259,12 @@ p.more {
     padding-bottom: 14px;
 }
 .filter-price {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 100%;
 }
 .more-block {
@@ -1684,7 +1689,7 @@ p.g-name-tover a, p.g-name-tover a:active, p.g-name-tover a:hover {
 }
 img.but-search {
     position: absolute;
-    top: 36px;
+    top: 27px;
 }
 p.g-search input[type="submit"] {
     opacity: 0;
