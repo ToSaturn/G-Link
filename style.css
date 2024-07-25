@@ -160,7 +160,7 @@ p.g-title {
     margin-bottom: 5px;
 }
 main.g-main .g-block-flex {
-    margin-bottom: -31px;
+    margin-bottom: -10px;
 }
 main.g-main .g-block-info {
     margin-bottom: 20px;
@@ -1071,6 +1071,7 @@ p.g-name-category {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+        height: 150px;
 }
 .brand-block.slick-slide {
     height: 162px;
@@ -1627,7 +1628,7 @@ p.param-title-info {
     padding-bottom: 10px;
 }
 .g-product-info-title {
-    margin-bottom: 40px;
+    margin-bottom: 17px;
 }
 p.info-name {
     font-size: 19px;
@@ -1680,6 +1681,7 @@ p.info-name {
 }
 .g-product-param-main {
     padding-top: 29px;
+    margin-bottom: 32px;
 }
 .g-product-info-title {
     display: -webkit-box;
@@ -2330,8 +2332,8 @@ a.pg-active, a.pg-active:active, a.pg-active:hover {
     max-width: 466px;
     width: 100%;
     margin-right: 24px;
-    max-height: 536px;
-    height: 536px;
+    max-height: 300px;
+    height: 300px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3014,13 +3016,21 @@ span.del-box {
 span.del-ex {
     color: rgb(0,114,186);
 }
-
+.g-main-banner.slick-initialized.slick-slider {
+    margin-top: 50px;
+}
 
 
 
 
 
 @media(max-width: 720px) {
+  .block-small-photo {
+    height: -webkit-fill-available;
+}
+.small-photo.slick-initialized.slick-slider {
+    height: -webkit-fill-available;
+}
   main.about-us .g-block__item {
       height: auto!important;
       margin: 5px 0!important;
@@ -3038,7 +3048,7 @@ header>.container {
     background: white;
 }
   main {
-    padding-top: 85px;
+    padding-top: 55px;
 }
   .form-control {
     -webkit-box-shadow: none!important;
@@ -4009,7 +4019,7 @@ p.g-text-p span {
 }
 p.g-text-p {
     font-size: 17px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 19.6px;
     margin-bottom: 16px;
 }
@@ -4292,12 +4302,12 @@ h1 {
 p.param-title-info.active {
     color: #222222;
     border-bottom: 1px solid #FEAA00;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 700;
     line-height: 24px;
 }
 p.param-title-info {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 24px;
     text-align: left;
@@ -4310,6 +4320,7 @@ p.info-name {
 }
 .g-product-info-title {
     margin-bottom: 32px;
+    width: max-content;
 }
 .g-product-param-main {
     padding-bottom: 0;
