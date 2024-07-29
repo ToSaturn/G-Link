@@ -1,4 +1,5 @@
 
+
 @font-face {
   font-family: 'Tilda Sans VF', sans-serif ;
   font-style: normal;
@@ -1124,7 +1125,8 @@ p.g-name-tover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 p.g-main-price {
     font-size: 20px;
@@ -1260,7 +1262,7 @@ p.more {
     border-radius: 16px;
 }
 .bx-filter .bx-filter-input-container input {
-    width: -webkit-fill-available!important;
+    width: 74px!important;
 }
 .check-container, .filter-title {
     margin-bottom: 9px!important;
@@ -1747,6 +1749,7 @@ p.g-name-tover a, p.g-name-tover a:active, p.g-name-tover a:hover {
 .col-lg-12.bx-filter-parameters-box.bx-active:first-child .bx-filter-block .row.bx-filter-parameters-box-container>div input {
     border: 1px solid #feaa00;
     border-radius: 6px;
+    height: 33px;
 }
 img.but-search {
     position: absolute;
@@ -2277,12 +2280,18 @@ main.uslovia .g-name-block {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-                width: 100%;
+    -ms-flex-pack: justify;
+    justify-content: flex-start;
+    width: 100%;
+}
+select.sort-pc {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-bottom: 20px;
 }
 .pagination {
     display: -webkit-box;
@@ -3025,8 +3034,16 @@ span.del-ex {
 .g-main-banner.slick-initialized.slick-slider {
     margin-top: 50px;
 }
-
-
+select.sort-pc {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #979BA4;
+    outline: none;
+    border: none;
+}
 
 
 
@@ -3039,6 +3056,9 @@ span.del-ex {
 
 
 @media(max-width: 720px) {
+  select.sort-pc {
+    display: none;
+  }
   p.g-text-contact {
     font-size: 17px;
     font-weight: 400;
@@ -3627,6 +3647,9 @@ main.about-us .g-block-div .g-block__item img, main.opt .g-block-div .g-block__i
     z-index: -1;
     height: auto;
     width: -webkit-fill-available;
+}
+main.opt .g-block-div .g-block__item img {
+    width: 100%;
 }
   a.g-but-white.g-but, a.g-but-white.g-but:active, a.g-but-white.g-but:hover {
     padding: 20px 24px;
@@ -4251,9 +4274,9 @@ a.p-tag-city {
     margin: 0 12px;
 }
 h1 {
-    font-size: 28px;
+    font-size: 22px;
     font-weight: 700;
-    line-height: 32px;
+    line-height: 24px;
     text-align: left;
 }
 .g-main-catalog {
@@ -4262,6 +4285,41 @@ h1 {
 .g-catalog-text {
     margin-top: 24px;
     margin-bottom: 24px;
+}
+p.product-art {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    margin-right: 24px;
+    margin-bottom: 20px;
+}
+main.product h1 {
+    margin-bottom: 3px;
+}
+.product-info-param li p:first-child {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: #5d5d5d;
+}
+.product-info-param li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 6px 0;
+    border-bottom: 1px solid #EFEFEF;
+}
+.product-info-param li p:last-child {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: right;
+    color: #262626;
 }
 .g-sort-filter {
     margin-top: 24px;
@@ -4347,6 +4405,8 @@ p.info-name {
 }
 .g-product-info-title {
     margin-bottom: 32px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
 }
 .g-product-param-main {
@@ -4403,5 +4463,20 @@ img.g-bask-tov-img {
     height: 66px;
     width: auto;
     margin-right: 10px;
+}
+.g-menu-header:first-child li:first-child:hover {
+    background: #FEAA00;
+}
+.g-menu-header:first-child li:first-child:hover a {
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.g-menu-header:first-child li:first-child:hover {
+    background: #feaa0000;
+}
+.g-bottom-header .container {
+    overflow-y: hidden;
 }
 }
