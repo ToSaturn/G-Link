@@ -3049,7 +3049,9 @@ select.sort-pc {
     max-width: 200px;
     width: 100%;
 }
-
+.g-filter-buttons input {
+    cursor: pointer;
+}
 
 
 
