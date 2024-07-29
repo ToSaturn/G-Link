@@ -3045,7 +3045,10 @@ select.sort-pc {
     border: none;
 }
 
-
+.news-detail img {
+    max-width: 200px;
+    width: 100%;
+}
 
 
 
