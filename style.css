@@ -1373,8 +1373,8 @@ a {
   cursor:pointer;
 }
 .g-catalog-text {
-    margin-top: 140px;
-    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-bottom: 0px;
 }
 
 .box-more {
@@ -1430,7 +1430,9 @@ p.product-art {
 }
 .g-product-art p {
     color: #979BA4;
+    margin-top: -20px;
 }
+
 p.join {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1642,7 +1644,7 @@ p.info-name {
     font-size: 19px;
     font-weight: 600;
     line-height: 31.2px;
-    margin-bottom: 20px;
+    margin-bottom: 6px;
 }
 .product-info-param li {
     display: -webkit-box;
@@ -1651,7 +1653,7 @@ p.info-name {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 12px 0;
+    padding: 5px 0;
 }
 .product-info-param li p:last-child {
     font-size: 20px;
@@ -1661,11 +1663,14 @@ p.info-name {
     color: #262626;
 }
 .product-info-param li p:first-child {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 24px;
     text-align: left;
     color: #5d5d5d;
+}
+.product-info-param li a, .product-info-param li p {
+    font-size: 18px!important;
 }
 .product-info-param ul {
     margin-bottom: 40px;
@@ -1684,7 +1689,7 @@ p.info-name {
     border-bottom: none;
 }
 .product-info-param {
-    max-width: 894px;
+    max-width: 705px;
     width: 100%;
 }
 .g-product-param-main {
@@ -2251,9 +2256,9 @@ main.uslovia .g-name-block {
 }
 .g-catalog-tovar .g-tover__item {
     margin: 0;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: auto;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2828,7 +2833,9 @@ ul.sub-menu {
     -ms-grid-column-span: 2;
     grid-column-end: 4;
 }
-
+.form-group.bx-soa-customer-field {
+      margin-bottom: 0px;
+}
 
 
 /* ----------------------правки - оформление------------------- */
@@ -2873,11 +2880,11 @@ h2.bx-soa-section-title {
     font-size: 16px!important;
     font-weight: 400!important;
     line-height: 19.2px!important;
-    padding: 20px 16px!important;
+    padding: 18px 16px!important;
     border-radius: 8px!important;
     background: #F3F3F3!important;
-    margin-bottom: 20px!important;
-    margin-top: 6px!important;
+    margin-bottom: 0px!important;
+    margin-top: 0px!important;
     color: #222222!important;
     border: 1px solid #E8E8E8!important;
 }
@@ -3052,8 +3059,12 @@ select.sort-pc {
 .g-filter-buttons input {
     cursor: pointer;
 }
-
-
+main.contacts iframe {
+    height: 256px;
+}
+.small-photo.slick-initialized.slick-slider {
+    border-radius: 0;
+}
 
 
 
@@ -3419,7 +3430,7 @@ p.price-cart {
     cursor: pointer;
     height: 100%;
     width: auto!important;
-    max-height: 300зч;
+    max-height: 300px;
 }
   .g-product-photo {
     max-width: -webkit-fill-available;
@@ -3470,7 +3481,7 @@ p.price-cart {
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between;
+            justify-content: center;
 }
   main.uslovia .g-name-block {
     margin-top: 80px;
@@ -3697,7 +3708,7 @@ main.opt .g-block-div .g-block__item img {
     right: 0;
     top: auto;
     bottom: 0;
-    height: 404px;
+    height: 370px;
 }
   p.g-banner-title {
     color: white;
